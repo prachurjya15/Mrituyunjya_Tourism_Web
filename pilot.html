@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Poppins|Lora|Indie+Flower&display=swap" rel="stylesheet">
+    <title>Pilot Program</title>
+    <style>
+        * {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            font-size: 2.3vmin;
+            letter-spacing: 2px;
+        }
+
+        nav li a {
+            text-decoration: none;
+        }
+
+        nav ul {
+            list-style: none;
+        }
+
+        /* navbar first */
+        .navbar1 {
+            position: fixed;
+            z-index: 100;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: #FFEFE2;
+            height: 10vh;
+            line-height: 10vh;
+            color: #FD8F8F;
+
+            box-sizing: border-box;
+        }
+
+        .nav1 {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .nav1 li a {
+            color: #FD8F8F;
+
+        }
+
+        #htr {
+            flex-basis: 50vw;
+            text-align: right;
+        }
+
+        /* for second navbar */
+        .navbar2 {
+            position: fixed;
+            z-index: 100;
+            top: 10vh;
+            left: 0;
+            width: 100vw;
+            background: #412236;
+            height: 8vh;
+            line-height: 8vh;
+            color: black;
+
+
+
+        }
+
+        .nav2 {
+            display: flex;
+            justify-content: center;
+        }
+
+        .nav2 li a {
+            color: #FD8F8F;
+            font-size: 2.7vmin;
+
+        }
+
+        .nav2 li a:hover {
+            color: white;
+        }
+
+        .nav2 li {
+            margin-right: 3vw;
+            margin-left: 3vw;
+        }
+
+        #caption-box {
+            background-image: url("images/pilot-head.jpg");
+            height: 45vh;
+            position: relative;
+            top: 18vh;
+            width: 100%;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            overflow-x: hidden;
+        }
+
+        #caption {
+            position: relative;
+            top: 31vh;
+            left: 8vw;
+            font-size: 5vh;
+            color: white;
+            font-weight: bold;
+            font-family: 'Lora', serif;
+
+        }
+
+        #text-phto-container {
+            position: relative;
+            top: 33.3vh;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        #phto-container {
+            margin-top: 12vh;
+            box-sizing: border-box;
+            flex-basis: 20vw;
+            margin-left: 5vw;
+
+        }
+
+        #phto-container img {
+            display: block;
+            width: 80%;
+            margin-bottom: 40vh;
+        }
+
+        #text-container {
+            flex-basis: 60vw;
+        }
+
+
+
+        .section-heading {
+            font-family: 'Lora', serif;
+            font-size: 5vh;
+            color: #44233B;
+            font-weight: bolder;
+            letter-spacing: 2px;
+        }
+
+
+        #blue-section {
+            color: #CFB7B3;
+            box-sizing: border-box;
+            margin-right: 10vw;
+            margin-left: 10vw;
+            background-image: url("images/icon-4.png");
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: center;
+            font-size: 2.3vh;
+            letter-spacing: 2px;
+            line-height: 2.2;
+
+        }
+
+        #blue-section-container {
+            box-sizing: border-box;
+            flex-basis: 100%;
+            background-image: linear-gradient(180deg, #49263d 33%, #8c4e5d 65%);
+            padding-top: 12vh;
+            box-sizing: border-box;
+            padding-bottom: 5vh;
+        }
+
+        #big-footer {
+            box-sizing: border-box;
+            background: #FFEFE2;
+            color: #694C5C;
+            padding-top: 5vh;
+            flex-basis: 100%;
+            text-align: center;
+            padding-left: 12vw;
+            padding-right: 12vw;
+            font-size: 2.1vh;
+        }
+
+        form {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        input {
+            box-sizing: border-box;
+            height: 8vh;
+            flex-basis: 20vw;
+            margin-bottom: 5vh;
+            border-radius: 25px;
+            border: 1px solid #694c5c;
+            padding: 10px;
+
+        }
+
+
+        button {
+            width: 20%;
+            border-radius: 25px;
+            height: 8vh;
+            border: none;
+            background: #fd8f8f;
+            cursor: pointer;
+            font-family: 'Poppins', sans-serif;
+
+
+        }
+
+        input::placeholder {
+            color: #694c5c;
+        }
+
+        #button-container {
+            flex-basis: 100%;
+        }
+
+        input:focus {
+            outline: none;
+            border: 2px solid #db4242;
+        }
+
+        input:hover {
+            outline: none;
+            border: 2px solid #db4242;
+        }
+
+        #bottom-footer {
+            box-sizing: border-box;
+            background: #44233B;
+            width: 100%;
+            padding-top: 12vh;
+        }
+
+        .footer {
+            flex-wrap: wrap;
+            display: flex;
+            justify-content: center;
+            height: 30vh;
+        }
+
+        .footer li {
+            list-style: none;
+            margin-right: 5vw;
+        }
+
+        .footer a {
+            text-decoration: none;
+            color: #FD8F8F;
+            font-family: 'Poppins', sans-serif;
+            font-size: 3vh;
+        }
+
+        .footer a:hover {
+            color: #fff0e3
+        }
+
+        .footer a:active {
+            color: #fff0e3;
+        }
+
+        #concept-container {
+            margin-bottom: 8vh;
+            flex-basis: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .concept-child {
+            margin-top: 5vh;
+            flex-basis: 23vw;
+            box-sizing: border-box;
+            font-size: 2.1vh;
+            text-align: center;
+            background-color: #FFEFE2;
+            margin-right: 2vw;
+            padding: 2vh 2vw;
+            transition: linear all 0.2s;
+        }
+
+        .concept-child:hover {
+            transform: scale(1.03);
+            box-shadow: 10px 10px 5px 0px rgba(61, 17, 60, 1);
+        }
+
+        .concept-logo-holder {
+            margin-top: 2vh;
+            margin-bottom: 2vh;
+            box-sizing: border-box;
+            width: 100%;
+            height: 10vh;
+            background-image: url('icon1.png');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
+
+        .concept-child .section-heading {
+            font-size: 3.1vh;
+        }
+
+        .concept-text {
+            font-size: 2vh;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar1">
+        <ul class="nav1">
+            <li><a href="#">xxxxxxxxxx</a></li>
+            <li><a href="#">abc@gmail.com</a></li>
+            <li id="htr"><a href="#">How to Reach</a></li>
+
+        </ul>
+    </nav>
+
+    <nav class="navbar2">
+        <ul class="nav2">
+            <li id="brand"><a href="about.html">About</a></li>
+            <li><a href="whatism.html">What is Mrityunjya</a></li>
+            <li><a href="ttd.html">Things To Do</a></li>
+            <li><a href="pilot.html">Pilot Programs</a></li>
+        </ul>
+    </nav>
+    <div id="caption-box">
+        <div id="caption">Pilot Program</div>
+    </div>
+    <div id="text-phto-container">
+        <div id="text-container">
+            <div class="section-heading">Does any of these reasons sound familiar to you?</div><br><br>
+            <ul>
+                <li> I want to travel with like-minded people.</li>
+                <li> I want to learn more about myself and my possibilities.</li>
+                <li> I’d love to travel, give something back, and be in service.</li>
+                <li> I wish to connect with Sanatani Hindu cultures and spiritual traditions.</li>
+                <li> I’m going through major life changes and could use clarity.</li>
+                <li> I have stress in my life and need to rest and be pampered.</li>
+                <li> I want to have the spiritual experiences I’ve read about.</li>
+                <li> I’ve tried conventional healing methods & want spiritual healing.</li>
+                <li> I desire to grow spiritually and am open to participating in workshops and instructor-lead
+                    activities that will move you toward this desire.</li>
+            </ul><br><br>
+            <div class="section-heading">If your answer is Yes, then you must attend our One Full day Spiritual
+                Enjoyment Retreat
+                @Mahamrityunjya Temple ,Nagaon-
+                (The World’s Tallest Unique Ling-Shaped Temple)</div><br><br>
+            <div class="section-heading">Program Highlights</div><br><br>
+            <ul style="list-style:square">
+                <li> Developing a deeper understanding of Spirituality through Vedic Practices and Yoga</li>
+                <li> Group asana self-Practice (together in a group in silence) to deepen your own practice</li>
+                <li> Morning Japa Practice of Mrityunjya Mantra- ( Mrityunjya Mantra It is said to be beneficial for
+                    mental, emotional and physical health. Thus it impacts your overall success and prosperity)</li>
+                <li> Vedic Havan/Puja Ceremony with 108 recitations of Maha Mrityunjya Mantra</li>
+                <li>Gau Seva-Offering food and water to Cows and earn Punyas (Spiritual Merit)</li>
+                <li>All Vegetarian sumptuous meals, freshly prepared with locally and sustainably sourced ingredients
+                </li>
+                <li>A small intimate group of not more than 30 like-minded people</li>
+                <li>Interactive Sessions on Spirituality , Leadership and Success.</li>
+                <li>Story Telling of the actual heritage of Mahamrityunjya Temple. </li>
+                <b>And Many More...</b>
+            </ul><br><br>
+            <div class="section-heading">Added Features</div><br><br>
+            <ul>
+                <li> Be with transformational mentors </li>
+                <li> Meditations; insightful teachings and discussions on Bharat’s(India’) spiritual traditions</li>
+                <li> Time for personal contemplation and reflection.</li>
+                <li> Travel with like-minded companions.</li>
+            </ul><br><br>
+            <b style="font-family: 'Indie Flower', cursive; font-size: 3.7vh;"> This is your gift of spiritual
+                nourishment to self
+                to deepen you inner strength</b><br><br>
+            <div class="section-heading">During the retreat you will get a chance to:</div><br><br>
+            <div class="section-heading"> Reset </div> <br>Periodically we all need to push the reset button and move
+            ahead with a thoughtless clear
+            mind. Come and let go and release all that stress, anxieties, negativity and worries that may be somehow
+            puling you down and regenerate and reinvigorate yourself with blessings of All-Powerful Mahamrityunjya to
+            bounce back in life.<br><br>
+            <div class="section-heading">Reflect</div> <br>Armed with Mrityunjya’s blessings to introspect, retrospect
+            and reflect on things that are
+            good for you and that which are not and then make new and solid decisions with clarity of thought and be
+            successful. <br><br>
+            <div class="section-heading"> Reconnect</div><br> Deepen you inner strength and explore the Rich Culture and
+            Spirituality. Get an
+            opportunity to restore, revitalize and reconnect your instinct with Divinity… This will empower you with a
+            new meaning of life and a newer confidence.<br><br>
+            <b> Discover the power that lay within you to consciously reshape your personal leadership. Break from the
+                usual routine and give yourself a chance to exhale and nurture your well-being and
+                spirituality.</b><br><br>
+        </div>
+        <div id="phto-container"></div>
+        <!-- mritunjya concept -->
+        <div id="concept-container">
+            <div class="section-heading" style="flex-basis:100%;text-align: center;">Concept Of Mrityunjya</div><br><br>
+            <div class="concept-child">
+                <div class="section-heading">EXPERT GUIDES</div>
+                <div class="concept-logo-holder"></div>
+                <div class="concept-text">You will be guided by our experts from the India, all of whom are eager to
+                    share and preserve their culture and ancestral knowledge. These include yogis, shamans, rinpoche and
+                    amchis (doctors of Tibetan medicine) – key players in their local communities.
+                </div>
+            </div>
+            <div class="concept-child">
+                <div class="section-heading">EXPERT GUIDES</div>
+                <div class="concept-logo-holder"></div>
+                <div class="concept-text">You will be guided by our experts from the India, all of whom are eager to
+                    share and preserve their culture and ancestral knowledge. These include yogis, shamans, rinpoche and
+                    amchis (doctors of Tibetan medicine) – key players in their local communities.
+                </div>
+            </div>
+            <div class="concept-child">
+                <div class="section-heading">EXPERT GUIDES</div>
+                <div class="concept-logo-holder"></div>
+                <div class="concept-text">You will be guided by our experts from the India, all of whom are eager to
+                    share and preserve their culture and ancestral knowledge. These include yogis, shamans, rinpoche and
+                    amchis (doctors of Tibetan medicine) – key players in their local communities.
+                </div>
+            </div>
+        </div>
+
+        <div id="blue-section-container">
+            <div id="blue-section" style="color:#cfb7b3">
+                <div class="section-heading" style="color:#fff0e3;">CONCLUSION
+                </div><br>
+                <b> Scientific Research shows that Spiritually Intelligent people are 8 times more likely to become
+                    effective leaders, statesmen, great thinkers and successful businessmen.</b> Working without purpose
+                and
+                meaning leaves people unsatisfied, but even with a little level of spiritual intelligence, we can bring
+                meaning, importance and general enrichment to our lives.
+                This program is carefully structured to nurture that inner you by exploring the deeper aspects of
+                spirituality. This retreat is richly rooted in ancient yogic traditions and practices and therefore will
+                help you reconnect with your inner true self. This experience will not only give you an experience of
+                our
+                ancient profound heritage but will also infuse within you a new definition of courage, confidence and
+                Leadership.
+            </div>
+        </div>
+        <div id="big-footer">
+            <div class="section-heading">Learn To Be Sustainably Happy!</div><br><br>
+            Join the Happiness Program. Experience a calm mind, reduced anxiety increased energy levels and sustainable
+            happiness everyday!<br><br>
+            <form>
+                <input placeholder="Name">
+                <input placeholder="E-Mail">
+                <input placeholder="Phone Number">
+                <div id="button-container"><button>Register Now</button></div>
+
+            </form><br><br>
+        </div>
+        <div id="bottom-footer">
+            <ul class="footer">
+                <li id="brand"><a href="about.html">About</a></li>
+                <li><a href="whatism.html">What is Mrityunjya</a></li>
+                <li><a href="ttd.html">Things To Do</a></li>
+                <li><a href="pilot.html">Pilot Programs</a></li>
+            </ul>
+        </div>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Poppins|Lora&display=swap" rel="stylesheet">
+    <title>What is Mrityunjya</title>
+    <style>
+        * {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            font-size: 2.3vmin;
+            letter-spacing: 2px;
+        }
+
+        nav li a {
+            text-decoration: none;
+        }
+
+        nav ul {
+            list-style: none;
+        }
+
+        /* navbar first */
+        .navbar1 {
+            position: fixed;
+            z-index: 100;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: #FFEFE2;
+            height: 10vh;
+            line-height: 10vh;
+            color: #FD8F8F;
+
+            box-sizing: border-box;
+        }
+
+        .nav1 {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .nav1 li a {
+            color: #FD8F8F;
+
+        }
+
+        #htr {
+            flex-basis: 50vw;
+            text-align: right;
+        }
+
+        /* for second navbar */
+        .navbar2 {
+            position: fixed;
+            z-index: 100;
+            top: 10vh;
+            left: 0;
+            width: 100vw;
+            background: #412236;
+            height: 8vh;
+            line-height: 8vh;
+            color: black;
+
+
+
+        }
+
+        .nav2 {
+            display: flex;
+            justify-content: center;
+        }
+
+        .nav2 li a {
+            color: #FD8F8F;
+            font-size: 2.7vmin;
+
+        }
+
+        .nav2 li a:hover {
+            color: white;
+        }
+
+        .nav2 li {
+            margin-right: 3vw;
+            margin-left: 3vw;
+        }
+
+        #caption-box {
+            background-image: url("images/mrit-head.jpg");
+            height: 45vh;
+            position: relative;
+            top: 18vh;
+            width: 100%;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            overflow-x: hidden;
+        }
+
+        #caption {
+            position: relative;
+            top: 31vh;
+            left: 8vw;
+            font-size: 5vh;
+            color: white;
+            font-weight: bold;
+            font-family: 'Lora', serif;
+
+        }
+
+        #text-phto-container {
+            position: relative;
+            top: 33.3vh;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        #phto-container {
+            margin-top: 12vh;
+            box-sizing: border-box;
+            flex-basis: 40vw;
+            margin-left: 5vw;
+
+        }
+
+        #phto-container img {
+            display: block;
+            width: 80%;
+            margin-bottom: 40vh;
+        }
+
+        #text-container {
+            flex-basis: 40vw;
+        }
+
+        .section-heading {
+            font-family: 'Lora', serif;
+            font-size: 5vh;
+            color: #44233B;
+            font-weight: bolder;
+            letter-spacing: 2px;
+        }
+
+
+        #blue-section {
+            color: #CFB7B3;
+            box-sizing: border-box;
+            margin-right: 10vw;
+            margin-left: 10vw;
+            background-image: url("images/icon-4.png");
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: center;
+            font-size: 2.3vh;
+            letter-spacing: 2px;
+            line-height: 2.2;
+
+        }
+
+        #blue-section-container {
+            box-sizing: border-box;
+            flex-basis: 100%;
+            background-image: linear-gradient(180deg, #49263d 33%, #8c4e5d 65%);
+            padding-top: 12vh;
+            box-sizing: border-box;
+            padding-bottom: 5vh;
+        }
+
+        #big-footer {
+            box-sizing: border-box;
+            background: #FFEFE2;
+            color: #694C5C;
+            padding-top: 5vh;
+            flex-basis: 100%;
+            text-align: center;
+            padding-left: 12vw;
+            padding-right: 12vw;
+            font-size: 2.1vh;
+        }
+
+        form {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        input {
+            box-sizing: border-box;
+            height: 8vh;
+            flex-basis: 20vw;
+            margin-bottom: 5vh;
+            border-radius: 25px;
+            border: 1px solid #694c5c;
+            padding: 10px;
+
+        }
+
+
+        button {
+            width: 20%;
+            border-radius: 25px;
+            height: 8vh;
+            border: none;
+            background: #fd8f8f;
+            cursor: pointer;
+            font-family: 'Poppins', sans-serif;
+
+
+        }
+
+        input::placeholder {
+            color: #694c5c;
+        }
+
+        #button-container {
+            flex-basis: 100%;
+        }
+
+        input:focus {
+            outline: none;
+            border: 2px solid #db4242;
+        }
+
+        input:hover {
+            outline: none;
+            border: 2px solid #db4242;
+        }
+
+        #bottom-footer {
+            box-sizing: border-box;
+            background: #44233B;
+            width: 100%;
+            padding-top: 12vh;
+        }
+
+        .footer {
+            flex-wrap: wrap;
+            display: flex;
+            justify-content: center;
+            height: 30vh;
+        }
+
+        .footer li {
+            list-style: none;
+            margin-right: 5vw;
+        }
+
+        .footer a {
+            text-decoration: none;
+            color: #FD8F8F;
+            font-family: 'Poppins', sans-serif;
+
+            font-size: 3vh;
+        }
+
+        .footer a:hover {
+            color: #fff0e3
+        }
+
+        .footer a:active {
+            color: #fff0e3;
+        }
+    </style>
+
+</head>
+
+<body>
+    <nav class="navbar1">
+        <ul class="nav1">
+            <li><a href="#">xxxxxxxxxx</a></li>
+            <li><a href="#">abc@gmail.com</a></li>
+            <li id="htr"><a href="#">How to Reach</a></li>
+
+        </ul>
+    </nav>
+
+    <nav class="navbar2">
+        <ul class="nav2">
+            <li id="brand"><a href="about.html">About</a></li>
+            <li><a href="whatism.html">What is Mrityunjya</a></li>
+            <li><a href="ttd.html">Things To Do</a></li>
+            <li><a href="pilot.html">Pilot Programs</a></li>
+        </ul>
+    </nav>
+
+
+    <div id="caption-box">
+        <div id="caption">What is Mrityunjya</div>
+    </div>
+    <div id="text-phto-container">
+        <div id="text-container">
+            <b>
+                <blockquote>ॐ त्र्यम्बकम् यजामहे सुगन्धिम् पुष्टिवर्धनम्, उर्वारूकमिव बन्धनान् मृत्योर्मुक्षीय मा मृतात्
+                    ।</blockquote>
+            </b><br>
+            <em><b>Om Trayambakam Yajamahe,<br>
+                    Sugandhim Pushtivardhanam,<br>
+                    Urva Rukamiva Bandhanan,<br>
+                    Mrityor Mokshiye Maamritat<br></b></em><br>
+            Shiva is the truth and He is Parameshwara (The Transcendent Lord). It is believed that Lord Shiva is easy to
+            please and often grants boons to his devotees. Whether it concerns money, finance, health or happiness, he
+            will grant all your wishes and relieve you from your sufferings.
+            Now the question that arises is how to worship Shiva? In Satyug, idol worship was helpful but in Kalyug,
+            just offering prayers in front of an idol won’t suffice. Even the Bhavishya Puranas have mentioned about the
+            significance of chanting mantras for happiness and peace of mind. Similarly, chanting the mantra of Shiva –
+            Mahamrityunjaya mantra daily will bestow you with good health, wealth, prosperity and long life. It
+            generates positive vibes and protects against calamities.<br><br>
+            <b>
+                <div class="section-heading">Why Perform Mrityunjya Puja and Dhyan?</div>
+            </b><br>
+            To achieve success in our life, work and business we must take care of our body, keep our brain sharp and
+            increase our life span. Along with it, we must also create conditions around us which will invite happiness,
+            progress, victory and success.<br>
+            Mrityunjya Vidya is an ancient secret power science. Observing Mrityunjya rituals we can evolve and
+            progress.<br>
+            It is imperative that we learn the Mrityunjya Vidya and here at Mrityunjya Ashram our expert spiritual
+            practitioners will not only discuss with you regarding the knowledge but will also teach you how to exactly
+            know and perform this Mahavidya.<br>
+            Understand that Mrityunjya Mahavidya is an empowering media through which one can increase one’s life
+            longevity, keep good health and increase the sharpness of the brain and the intellect and thereby attract
+            success and prosperity- not only in spiritual life but also here in this material world…Thus here at
+            Mrityunjya Ashram you will get a privilege and an opportunity to practically know the Mahavidya, learn it,
+            experience it, live it and enjoy it.<br>
+            With a combination of wisdom, practice and exercise of the Mrityunjya Mahavidya , you will be able to
+            transforming your entire energy field, and this will help you to clear away the energy blocks in your mind
+            and open blocked energy points in the body. This is because this vidya carries potent spiritual vibrations —
+            divine frequencies that will lift you to your next level of healing and transformation.<br>
+            <div class="section-heading">Why learn the Vidya in our Mrityunjya Ashram?</div><br>
+            Raw power resides in the Bhoomi. This Bhoomi or land in which the Mahamrityunjya Mandir is built is
+            supremely powerful. Two Shakti’s (Powers) in their full potential are present here. One is called
+            <b>Mrita
+                Sanjeevani Shakti</b> and the other is known as <b>Mrityunjya Shakti.</b><br><br>
+            Because of the divine and supremely powerful presence of these two Live Forces and Natural Cosmic
+            Energies,
+            this Bhoomi, which is known as Narasimha Kshetra, in Puronigudam, Nagaon,Assam has become most potent
+            and
+            powerful. Thus, anyone who visits this particular place will find the resistance power of his or her
+            body
+            automatically augmented and increased.<br><br>
+            Thousands and Thousands of years back Guru Shukracharya had established these two powers in this place
+            through His arduous Sadhna and Tapasya. <br><br>
+            However unfortunately, with the passage of time, these powers, in absence of any holistic and
+            ritualistic
+            activities, became inactive. In the year 1999 Bramharishi Mahamrityunjya Shri Shri Bhrigugiri Maharaj-
+            the
+            only man on earth who is a Mahamrityunjya Siddha, after realizing the significance of this particular
+            tract
+            of land, discovered these two living powers and activated them again through His intense Tapobal
+            (Spiritual
+            Strength).<br><br>
+            Gurudev also performed hundreds and hundreds of Vedic Yagnyas in this land by following specific secret
+            Ancient Scientific Systems to resurrect and reinstate these powers. Thus, as soon as these ancient Vedic
+            rituals (Friction) were started, the sacred super powers consequentially got rejuvenated and
+            resuscitated.
+            Therefore they turned active again and thereafter assumed their full potent force. Which means they
+            became
+            Shakti-Sampanna .<br><br>
+            Presently these Shaktis are pervasive all throughout the Narasimha Kshetra and hence presently this
+            Bhoomi
+            has also become most supremely powerful.
+            <br><br>
+            Mrityunjya Bhrigugiri Maharaj has proclaimed that beneath the Mahamrityunjya Mega Structure lays hidden
+            the
+            ancient Mahamrityunjya Linga which was consecrated by Maharishi Shukracharya and is 51 Quintal as
+            present
+            weight. It is imperative to know that Raj Rishi Hiranyakashipu (Bhakta Prahlad’s Father) performed his
+            Sadhna here and achieved Mahamrityunjya.In Sanskrit “Hiranya” means Gold and “Kashipu” signifies Dress.
+            Thus
+            the Rishi who wore the dress made of Gold and who thus performed Mahamrityunjya Sadhna is eulogized as
+            Hiranyakashipu.<br><br>
+            Nobody can just build a Mrityunjya temple, for had that been the case, there would have been numerous
+            Mrityunjya temple in every nook and corner. Mrityunjya Sadhna is ultimate powerful and hence very few
+            people
+            pursue it with success. Moreover, there is no second Mrityunjya Siddha Purush present on this earth.
+            Gurudev
+            Bramharishi Mahamrityunjya Bhrigugiri is the only living man who is a Mahamrityunjya Siddha and His Guru
+            is
+            the same Immortal Mahamrityunjya Markandeya Himself, who is from the Vedic Ages. Mahamrityunjya
+            Markandeya
+            secretly stayed with Baba Bhrigugiri for 9 years as an ordinary man and taught him the Mahamrityunjya
+            Vidya.<br><br>
+            Hence, keeping the above enlightening knowledge in view, don’t think twice of visiting this sacred site.
+            Have deep faith in divinity and come relish a never experienced experiential journey.
+            <br><br>
+        </div>
+        <div id="phto-container">
+            <img src="images/mrit-body.jpg">
+
+        </div>
+        <div id="blue-section-container">
+            <div id="blue-section" style="color:#cfb7b3">
+                <div class="section-heading" style="color:#fff0e3;">Other Benefits Includes: </div>
+                <br> 1. The Mrityunjya Vidya becomes a protective shield to avert accidents and negative influences
+                around us,
+                protects you from complicated diseases, frees you from fear and wards off untimely death.  It saves one
+                from
+                unnatural /untimely death due to various causes and drives away evil forces. Hence, it is also called
+                the
+                moksha mantra.<br><br>
+                2. It reduces the ill-effects of Navagrahas as well. It helps in getting rid of karmic doshas.
+                3. Maha Mrityunjaya Homam is very much effective for people who have Kala Sarpa yoga in their horoscope.
+                4. Performing Maha Mrityunjaya Homam helps in removing evil planetary effects or yogas present in the
+                person’s horoscope.<br><br>
+                5. Chanting of this mantra helps in situations of familial discord, division of property and also in the
+                event of people dying due to an epidemic.<br><br>
+
+                6. If you are undergoing some financial troubles or suffering losses in business Mrityunjya Vidya will
+                benefit you.
+                <br><br><br>
+
+            </div>
+        </div>
+        <div id="big-footer">
+            <div class="section-heading">Learn To Be Sustainably Happy!</div><br><br>
+            Join the Happiness Program. Experience a calm mind, reduced anxiety increased energy levels and sustainable
+            happiness everyday!<br><br>
+            <form>
+                <input placeholder="Name">
+                <input placeholder="E-Mail">
+                <input placeholder="Phone Number">
+                <div id="button-container"><button>Register Now</button></div>
+
+            </form><br><br>
+        </div>
+        <div id="bottom-footer">
+            <ul class="footer">
+                <li id="brand"><a href="about.html">About</a></li>
+                <li><a href="whatism.html">What is Mrityunjya</a></li>
+                <li><a href="ttd.html">Things To Do</a></li>
+                <li><a href="pilot.html">Pilot Programs</a></li>
+            </ul>
+        </div>
+
+
+    </div>
+
+
+
+</body>
+
+</html>

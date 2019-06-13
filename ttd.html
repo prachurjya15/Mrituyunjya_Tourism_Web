@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Titillium+Web&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poppins|Lora&display=swap" rel="stylesheet">
+    <title>Things To Do</title>
+    <style>
+        * {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            font-size: 2.3vmin;
+            letter-spacing: 2px;
+        }
+
+        nav li a {
+            text-decoration: none;
+        }
+
+        nav ul {
+            list-style: none;
+        }
+
+        /* navbar first */
+        .navbar1 {
+            position: fixed;
+            z-index: 100;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: #FFEFE2;
+            height: 10vh;
+            line-height: 10vh;
+            color: #FD8F8F;
+
+            box-sizing: border-box;
+        }
+
+        .nav1 {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .nav1 li a {
+            color: #FD8F8F;
+
+        }
+
+        #htr {
+            flex-basis: 50vw;
+            text-align: right;
+        }
+
+        /* for second navbar */
+        .navbar2 {
+            position: fixed;
+            z-index: 100;
+            top: 10vh;
+            left: 0;
+            width: 100vw;
+            background: #412236;
+            height: 8vh;
+            line-height: 8vh;
+            color: black;
+
+
+
+        }
+
+        .nav2 {
+            display: flex;
+            justify-content: center;
+        }
+
+        .nav2 li a {
+            color: #FD8F8F;
+            font-size: 2.7vmin;
+
+        }
+
+        .nav2 li a:hover {
+            color: white;
+        }
+
+        .nav2 li {
+            margin-right: 3vw;
+            margin-left: 3vw;
+        }
+
+        #caption-box {
+            background-image: url("images/ttd-head.jpg");
+            height: 45vh;
+            position: relative;
+            top: 18vh;
+            width: 100%;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            overflow-x: hidden;
+        }
+
+        #caption {
+            position: relative;
+            top: 31vh;
+            left: 8vw;
+            font-size: 5vh;
+            color: white;
+            font-weight: bold;
+            font-family: 'Lora', serif;
+
+        }
+
+        #ttd-container {
+            position: relative;
+            left: 8vw;
+            color: gray;
+            box-sizing: border-box;
+            margin-right: 30vw;
+            margin-top: 3vh;
+            font-size: 3.1vh;
+        }
+
+        #text-phto-container {
+            position: relative;
+            top: 33.3vh;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        #phto-container {
+            margin-top: 12vh;
+            box-sizing: border-box;
+            flex-basis: 40vw;
+            margin-left: 5vw;
+
+        }
+
+        #phto-container img {
+            display: block;
+            width: 80%;
+            margin-bottom: 80vh;
+        }
+
+        #text-container {
+            flex-basis: 40vw;
+        }
+
+
+        .section-heading {
+            font-family: 'Lora', serif;
+            font-size: 5vh;
+            color: #44233B;
+            font-weight: bolder;
+            letter-spacing: 2px;
+        }
+
+
+        #blue-section {
+            color: #CFB7B3;
+            box-sizing: border-box;
+            margin-right: 10vw;
+            margin-left: 10vw;
+            background-image: url("images/icon-4.png");
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: center;
+            font-size: 2.3vh;
+            letter-spacing: 2px;
+            line-height: 2.2;
+
+        }
+
+        #blue-section-container {
+            box-sizing: border-box;
+            flex-basis: 100%;
+            background-image: linear-gradient(180deg, #49263d 33%, #8c4e5d 65%);
+            padding-top: 12vh;
+            box-sizing: border-box;
+            padding-bottom: 5vh;
+        }
+
+        #big-footer {
+            box-sizing: border-box;
+            background: #FFEFE2;
+            color: #694C5C;
+            padding-top: 5vh;
+            flex-basis: 100%;
+            text-align: center;
+            padding-left: 12vw;
+            padding-right: 12vw;
+            font-size: 2.1vh;
+        }
+
+        form {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        input {
+            box-sizing: border-box;
+            height: 8vh;
+            flex-basis: 20vw;
+            margin-bottom: 5vh;
+            border-radius: 25px;
+            border: 1px solid #694c5c;
+            padding: 10px;
+
+        }
+
+
+        button {
+            width: 20%;
+            border-radius: 25px;
+            height: 8vh;
+            border: none;
+            background: #fd8f8f;
+            cursor: pointer;
+            font-family: 'Poppins', sans-serif;
+
+
+        }
+
+        input::placeholder {
+            color: #694c5c;
+        }
+
+        #button-container {
+            flex-basis: 100%;
+        }
+
+        input:focus {
+            outline: none;
+            border: 2px solid #db4242;
+        }
+
+        input:hover {
+            outline: none;
+            border: 2px solid #db4242;
+        }
+
+        #bottom-footer {
+            box-sizing: border-box;
+            background: #44233B;
+            width: 100%;
+            padding-top: 12vh;
+        }
+
+        .footer {
+            flex-wrap: wrap;
+            display: flex;
+            justify-content: center;
+            height: 30vh;
+        }
+
+        .footer li {
+            list-style: none;
+            margin-right: 5vw;
+        }
+
+        .footer a {
+            text-decoration: none;
+            color: #FD8F8F;
+            font-family: 'Poppins', sans-serif;
+
+            font-size: 2.5vh;
+        }
+
+        .footer a:hover {
+            color: #fff0e3
+        }
+
+        .footer a:active {
+            color: #fff0e3;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar1">
+        <ul class="nav1">
+            <li><a href="#">xxxxxxxxxx</a></li>
+            <li><a href="#">abc@gmail.com</a></li>
+            <li id="htr"><a href="#">How to Reach</a></li>
+
+        </ul>
+    </nav>
+
+    <nav class="navbar2">
+        <ul class="nav2">
+            <li id="brand"><a href="about.html">About</a></li>
+            <li><a href="whatism.html">What is Mrityunjya</a></li>
+            <li><a href="ttd.html">Things To Do</a></li>
+            <li><a href="pilot.html">Pilot Programs</a></li>
+        </ul>
+    </nav>
+    <div id="caption-box">
+        <div id="caption">THINGS TO DO</div>
+    </div>
+    <div id="text-phto-container">
+        <div id="text-container">
+            The Mrityunjya Temple Nagaon Ashram is a place of planning and organization for various and distinct
+            spiritual projects mainly established on the ancient Vedic principles of seva (service), dana (charity),
+            tapa (austerities), yagna (sacrificial ritual) and Dharma (Religion).
+            In welcoming volunteers who may likely have had no exposure to Sanatani Hindu Dharma or Hindu spirituality
+            in general, we are politely reverent and respectful of their own personal beliefs and spiritual practices.
+            And therefore, with open minds and hearts we encourage you to be a part of our spiritual activities.<br><br>
+            <div class="section-heading">Organic Garden and Agriculture in Mrityunjya Temple Ashram</div><br><br>
+            One of our volunteer projects in India is our organic garden at the temple. We invite our volunteers,
+            devotees and visitors to participate in this beautiful project. Therefore they can have the hands-on sense
+            of connecting with Mother Earth. And as has been noted, to cultivate healthful, organic produce for the
+            ashram’s kitchen.<br>A big part of the ashram tradition involves offering food to the deities before serving
+            it to the inhabitants and guests. We aim to use the highest quality, purest ingredients in food preparations
+            for the deities. What better way to express our gratitude to Mother Earth and our love to Lord
+            Mahamrityunjya than growing our own organic food!<br><br>
+            <div class="section-heading">Ashram Life – “Simple living, elevated thinking…</div><br><br> Although the
+            lifestyle in the ashram is very simple or even somewhat austere by western standards, the consciousness of
+            the devotees is quite elevated due to daily exposure to sacred scriptures and constant engagement in pious
+            service. We encourage visitors and volunteers to immerse themselves in this devotional environment to gain
+            an authentic ashram experience.<br>Throughout the year, the ashram publishes news about the major spiritual
+            and cultural events, celebrations and festivals at Mahamrityunjya Temple, Nagaon. Some of the volunteer
+            programs available include organic farming, vegetarian cooking and baking, as well as general maintenance.
+            The Mahamrityunjya Temple Nagaon, can be regarded as one of the important ecological educational center in
+            Assam.<br>
+            The Ashram inmates cultivate their own food using organic farming, permaculture and bio-dynamic techniques.
+            Only Cow dung is used as a natural manure and no chemicals are used. .  Vedic philosophy and holistic
+            lifestyle in harmony with caring for and respecting Mother Earth can be found overflowing in this ashram.
+            The residents of the community also work as volunteers. They devote their valuable time and energy to
+            develop the project as well as their own personal cultivation.<br>The Mrityunjya Ashram actively
+            promotes community experience. Moreover inspiring visitors to have a glimpse of the magic of sharing the
+            same space and interests with a number of people of a similar nature. Thus opening the door to a whole new
+            world of friends and relationships that will surely fill you with joy and enthusiasm.<br>In this way, anyone
+            interested can get to know more about the wisdom of ancient India and Vedic Philosophy. Here we help you
+            discover concepts such as karma, reincarnation, and many other values connected to <b>Eastern spirituality
+                and mysticism.</b> We provide it through a number of interesting gatherings, held periodically.<br>In
+            conclusion, our desire is to share a lifestyle based on simple and healthy living and very deep and high
+            feeling. In this way we can give to each other a whole range of new experiences that will enrich our lives
+            and foster our abilities.<br><br>
+
+
+            <div class="section-heading">Gaushala</div><br><br>
+            Taking care of cows and being around them is a blissful experience altogether! The indigenous cows are very
+            warmhearted, observant and affectionate. Being naturally very loving and friendly, they too instinctively
+            look for deep love, care and cuddling .Simply hug , pat them, feed them and show your care and they will
+            just love you! <br>The Vedic Sashtras have revealed that the entire Gods , Goddesses and Demigods headed by
+            Goddess Laxmi resides in Gau Mata (Goddess Mother Cow) and the one who feeds, loves and cares her will
+            accumulate many punyas and earn success in life. Thus Gau seva (caring for the cows) is considered one of
+            the highest forms of seva (service). Also, in many communities, the cow is believed to be sacred and
+            worshipped.<br>Cow is not just an ordinary animal. She is Holy Divinity….By feeding a cow, you can overcome
+            the malefic effects of planets in your horoscope. People looking for child or favors through real estate
+            should feed a cow. It is beneficial if you feed green grass or flour sweets to the cow. If you are going
+            through bad experiences every day, then after shower taking cows blessing by touching her feet will bring in
+            peace, harmony & prosperity in your life. The Hindu Sanatani Scriptures declare that it is very auspicious
+            seeing cow or hearing its voice while going for important work. If sun is unfavorably placed in your
+            horoscope then feeding cows with wheat bread (Indian roti) brings in blessings. Moreover, presence of cow in
+            the house removes all the vastu dosha whereas showing a disrespect to her is said to brings in bad
+            luck.<br>The following <em>sukta</em> is taken from the <em>Atharva</em> Veda describing the Cosmic form of
+            an ox and a cow. Their quality is sattvic – pure, nourishing, life-giving. They are intelligent and alert,
+            yet by nature they are relaxed. This beautiful hymn glorifies cows in an amazing way.It is important to
+            understand that these Vedic verses were written more than 5000 years ago. Even in that time, people were
+            trying to protect cows by assigning them amazing Cosmic form. One can only wonder – if at that time people
+            were protecting the cows, can we not also do so today?<br><br>
+            <em>प्रजापतिश्च परमेष्ठी च शृङ्गे इन्द्र: शिरो अग्निर्ललाटं यम: कृकाटम् ॥१॥<br>
+                सोमो राजा मस्तिष्को द्यौरुत्तरहनु: पृथिव्यधरहनु:॥२॥<br>
+                विद्युज्जिह्वा मरुतो दंता रेवतीर्ग्रीवा: कृत्तिका स्कन्धा धर्मो वह:॥३॥<br>
+                विश्वं वायु: स्वर्गो लोक: कृष्णद्रं विधरणी निवेष्य: ॥४॥<br><br></em>
+            <em>Prajāpati and the most exalted one are the two horns; Indra the head; Agni the forehead; Yamathe neck
+                joint. ||1||<br></em>
+            <em>Moon is the brain; the sky the upper jaw; the earth the lower jaw. ||2||<br></em>
+            <em>Lightning is the tongue; the Maruts the teeth; the Revatī the neck; the Kṛṭikā the shoulders; the Sun
+                the withers. ||3||<br></em>
+            <em>Vāyu is all the limbs; the heavenly world its abode; the spinal cord is Rudra. ||4||<br><br></em>n the
+            Mrityunjya Ashram,visitor are provided guided tours with information regarding the different breeds of
+            Indian cows and their material and spiritual benefit to society. Therefore, simply join in and offer a
+            helping hand by grooming cows and cleaning sheds and earn your Punyas.<br><br>
+            <div class="section-heading">Padum Pukhuri</div>This is a pond for harvesting Lotus flowers. Many varieties
+            of fish live in this pond and are there for purely spiritual purpose (NOT Commercial). Earn your “Matsya
+            Punya” (Spiritual Merit by feeding fish) by proving food to them. Since ages, people are feeding these small
+            and harmless creatures. It is believed that fish take all your adversaries and safeguard you from troubles.
+            If you are in debts or seeking money, you should feed flour balls. You should feed fish early in the morning
+            and after sunset. <br><br>
+            <div class="section-heading">Sanskrit Vidyalaya</div><br><br>
+            Interact with the students of <b>Mrityunjay Veda Vidyala Peeth</b> who are living a self-disciplined life
+            style through the fully Residential School of Gurukula System. Apart from providing all round education
+            special emphasis is laid on morality, leadership and preservation and restoration of ancient Vedic heritage
+            as well as education and training on varied fields such as English literature, Assamese literature, Science,
+            Maths, Language skills, Drama, Song, Dance and other fine arts are also imparted to the students. The
+            objective of the School is to provide Man – Making and character building education and making the children
+            realize, appreciate and follow the cultural heritage of our country.<br>
+            The <b>Mrityunjay Veda Vidyala Peeth</b> was established on February 2013, and operates in the aegis of
+            Maharishi Sandipani Rashtriya Ved Vidya Pratishthan,under <b>MHRD,Govt. of India.</b><br>
+
+        </div>
+        <div id="phto-container">
+            <img src="images/ttd-img-1.jpg">
+            <img src="images/ttd-img-3.jpg">
+            <img src="images/ttd-img-2.jpg">
+        </div>
+
+
+        <div id="blue-section-container">
+            <div id="blue-section" style="color:#cfb7b3">
+                <div class="section-heading" style="color:#fff0e3;">CONCLUSION
+                </div><br>
+                In conclusion, our desire is to share a holistic way of life based on simple and healthy living and very
+                deep and high feeling. In this way we can give to each other a whole range of new experiences that will
+                enrich our lives and foster our abilities. And which in turn will ignite our consciousness, spirit and
+                make us better, joyous and successful human beings.<br>As an authentic Hindu ashram in the Mrityunjya
+                tradition, all of our activities are spiritual in nature, meaning everything is considered devotional
+                service. In welcoming volunteers who likely have had no exposure to Hindu spirituality, we are
+                respectful of your own personal beliefs and spiritual practices. With open minds and hearts we encourage
+                you to join us in our spiritual activities. Entering into the temple space, you will feel as if you
+                could be in a village in India lost in time. For those seeking tranquility and a peaceful environment to
+                deepen spiritual awareness this is the perfect place. So don’t wait, just join us and change your life…
+            </div>
+        </div>
+        <div id="big-footer">
+            <div class="section-heading">Learn To Be Sustainably Happy!</div><br><br>
+            Join the Happiness Program. Experience a calm mind, reduced anxiety increased energy levels and sustainable
+            happiness everyday!<br><br>
+            <form>
+                <input placeholder="Name">
+                <input placeholder="E-Mail">
+                <input placeholder="Phone Number">
+                <div id="button-container"><button>Register Now</button></div>
+
+            </form><br><br>
+        </div>
+        <div id="bottom-footer">
+            <ul class="footer">
+                <li id="brand"><a href="about.html">About</a></li>
+                <li><a href="whatism.html">What is Mrityunjya</a></li>
+                <li><a href="ttd.html">Things To Do</a></li>
+                <li><a href="pilot.html">Pilot Programs</a></li>
+            </ul>
+        </div>
+    </div>
+
+</body>
+
+</html>

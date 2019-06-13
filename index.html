@@ -1,0 +1,884 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Poppins|Lora&display=swap" rel="stylesheet">
+
+    <title>Mrityunjya Temple</title>
+    <style>
+        * {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            font-size: 2.3vmin;
+            letter-spacing: 2px;
+        }
+
+
+        /* nav li a {
+            text-decoration: none;
+            color: #FD8F8F
+        }
+
+        nav li a:hover {
+            color: #CFB7B3;
+        }
+
+        nav ul {
+            list-style: none;
+        }
+
+        .navbar {
+            box-sizing: border-box;
+            margin-top: 7vh;
+            background-color: inherit;
+            position: relative;
+            z-index: 10000;
+            filter: contrast(6.8)
+        }
+
+        .nav {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .nav-item {
+            flex-basis: 15vw;
+        }
+
+        #brand a {
+            color: #CFB7B3;
+            font-size: 3vh;
+        }
+
+        .nav-item a {
+            font-size: 2.5vh;
+        } */
+
+        nav li a {
+            text-decoration: none;
+        }
+
+        nav ul {
+            list-style: none;
+        }
+
+        /* navbar first */
+        .navbar1 {
+            position: fixed;
+            z-index: 100;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: #FFEFE2;
+            height: 10vh;
+            line-height: 10vh;
+            color: #FD8F8F;
+            font-weight: bold;
+            box-sizing: border-box;
+        }
+
+        .nav1 {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .nav1 li a {
+            color: #FD8F8F;
+
+        }
+
+        #htr {
+            flex-basis: 50vw;
+            text-align: right;
+        }
+
+        /* for second navbar */
+        .navbar2 {
+            position: fixed;
+            z-index: 100;
+            top: 10vh;
+            left: 0;
+            width: 100%;
+            background: #412236;
+            height: 8vh;
+            line-height: 8vh;
+            color: black;
+
+
+
+        }
+
+        .nav2 {
+            display: flex;
+            justify-content: center;
+        }
+
+        .nav2 li a {
+            color: #FD8F8F;
+            font-size: 2.7vmin;
+            font-weight: bold;
+        }
+
+        .nav2 li a:hover {
+            color: white;
+        }
+
+        .nav2 li {
+            margin-right: 3vw;
+            margin-left: 3vw;
+        }
+
+
+        #page-1 {
+            height: 100vh;
+            overflow-x: hidden;
+        }
+
+        #myVideo {
+            height: 100vh;
+            width: 100%;
+            position: absolute;
+            left: 0vw;
+            top: 0;
+        }
+
+        /* #VideoCont{
+            box-sizing:border-box;
+            position:absolute;
+            left:0;
+            top:25vh;
+            width:100vw;
+        } */
+
+        /* #head-text {
+            color: white;
+            font-weight: bold;
+            font-size: 5vh;
+            position: relative;
+            top: 70vh;
+            left: 12vw;
+            letter-spacing: 2px;
+            background-color: #6e3f05;
+            width: 60vw;
+
+        }
+
+        #support-text {
+            color: white;
+            font-size: 3vh;
+            position: relative;
+            top: 75vh;
+            left: 12vw;
+            background-color: #6e3f05;
+            width: 30vw;
+        } */
+
+        #page-2 {
+            box-sizing: border-box;
+            overflow-x: hidden;
+            letter-spacing: 2px;
+            background: #FFEFE2;
+        }
+
+
+
+        #act-container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        #act-container-head {
+            flex-basis: 100vw;
+            text-align: center;
+            font-size: 7vh;
+            font-weight: bold;
+            color: #44233B;
+            box-sizing: border-box;
+            margin-bottom: 10vh;
+            position: relative;
+            margin-top: 30vh;
+        }
+
+        .act {
+            flex-basis: 25vw;
+            box-sizing: border-box;
+            margin-bottom: 10vh;
+            font-size: 2.3vh;
+            background: white;
+            text-align: center;
+            color: #694C5C;
+            padding: 3vw;
+            box-shadow: 10px 10px 5px 0px #7e4555;
+        }
+
+        .act-head {
+            font-weight: bold;
+            font-size: 3.5vh;
+            color: #44233B;
+        }
+
+        /* .act-left {
+            margin-left: 12vw;
+            margin-right: 5vw;
+        }
+
+        .act-right {
+            margin-right: 12vw;
+        } */
+
+        .act-logo-holder {
+            height: 15vh;
+            width: 100%;
+            margin-bottom: 5vh;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: contain;
+
+
+
+        }
+
+        .logo-1 {
+            background-image: url("images/icon1.png");
+        }
+
+        .logo-2 {
+            background-image: url("images/icon2.png");
+        }
+
+        .logo-3 {
+            background-image: url("images/icon3.png");
+        }
+
+        #abt-guru {
+            background: #fc4a1a;
+            /* fallback for old browsers */
+            background: -webkit-linear-gradient(to bottom, #f7b733, #fc4a1a);
+            /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to bottom, #f7b733, #fc4a1a);
+            /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+            /* color: #6e3f05; */
+            /* height: 70vh; */
+            display: flex;
+            /* margin-bottom: 10vh; */
+            box-sizing: border-box;
+            font-size: 2.3vh;
+
+
+        }
+
+        #abt-guru-text,
+        iframe {
+            margin-top: 12vh;
+            margin-bottom: 12vh;
+        }
+
+        iframe {
+            width: 40vw;
+            height: 50vh;
+
+        }
+
+        #abt-guru-text {
+            flex-basis: 40vw;
+            margin-right: 10vw;
+            margin-left: 3vw;
+        }
+
+        #abt-guru-head {
+            font-weight: bold;
+            text-align: center;
+            font-size: 4vh;
+            margin-bottom: 2vh;
+        }
+
+        #page-3 {
+            height: 80vh;
+            background-image: url("images/2.jpg");
+            background-size: cover;
+            background-position: center;
+        }
+
+        #page-4 {
+            background: #FFEFE2;
+
+        }
+
+        .phtogal-1 {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .phto {
+            flex-basis: 20vw;
+            height: 35vh;
+            background: red;
+            margin-bottom: 10vh;
+            box-sizing: border-box;
+        }
+
+        #phtotitle {
+            font-size: 5vh;
+            box-sizing: border-box;
+            position: relative;
+            flex-basis: 100vw;
+            text-align: center;
+            height: 20vh;
+            font-weight: bold;
+            color: #44233B;
+            top: 2vh;
+        }
+
+        .imgdesp {
+            position: relative;
+            top: 37vh;
+            width: 100%;
+            text-align: center;
+        }
+
+        #img1 {
+            background: url("images/pg-1.jpg");
+            background-size: cover;
+            background-position: center;
+        }
+
+        #img2 {
+            background: url("images/pg-2.jpg");
+            background-size: cover;
+            background-position: center;
+        }
+
+        #img3 {
+            background: url("images/pg-3.jpg");
+            background-size: cover;
+            background-position: center;
+        }
+
+        #img4 {
+            background: url("images/pg-4.jpg");
+            background-size: cover;
+            background-position: center;
+        }
+
+        #phto-cont {
+            background: #e5e5e5;
+            /* height: 90vh; */
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        #big-phto {
+            margin-bottom: 10vh;
+            margin-top: 10vh;
+            flex-basis: 50vw;
+            height: 70vh;
+            background: url("images/7.jpg");
+        }
+
+        #phto-text {
+            flex-basis: 40vw;
+            position: relative;
+            top: 10vh;
+            text-align: center;
+            font-size: 2.1vh;
+        }
+
+        #phto-head {
+            font-size: 3.4vh;
+            font-weight: bold;
+            position: relative;
+            top: -5vh;
+        }
+
+        .phtogal-2 {
+            background: #e5e5e5;
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        #img5 {
+            background: url("images/pg-5.jpg");
+            background-size: cover;
+            background-position: center;
+        }
+
+        #img6 {
+            background: url("images/pg-6.jpg");
+            background-size: cover;
+            background-position: center;
+        }
+
+        #img7 {
+            background: url("images/pg-7.jpg");
+            background-size: cover;
+            background-position: center;
+        }
+
+        #img8 {
+            background: url("images/pg-8.jpg");
+            background-size: cover;
+            background-position: center;
+        }
+
+        #img9 {
+            background: url("images/pg-9.jpg");
+            background-size: cover;
+            background-position: center;
+        }
+
+        #img10 {
+            background: url("images/pg-10.jpg");
+            background-size: cover;
+            background-position: center;
+        }
+
+        #img11 {
+            background: url("images/pg-11.jpg");
+            background-size: cover;
+            background-position: center;
+        }
+
+        #img12 {
+            background: url("images/pg-12.jpg");
+            background-size: cover;
+            background-position: center;
+        }
+
+        #img13 {
+            background: url("images/pg-13.jpg");
+            background-size: cover;
+            background-position: center;
+        }
+
+        #img14 {
+            background: url("images/pg-14.jpg");
+            background-size: cover;
+            background-position: center;
+        }
+
+        #img15 {
+            background: url("images/pg-15.jpg");
+            background-size: cover;
+            background-position: center;
+        }
+
+        #img16 {
+            background: url("images/pg-16.jpg");
+            background-size: cover;
+            background-position: center;
+        }
+
+        #page-5 {
+
+            background: #FFEFE2;
+
+        }
+
+        .fullscreen-bg {
+            position: fixed;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            overflow: hidden;
+            z-index: -100;
+        }
+
+        .fullscreen-bg__video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        @media (min-aspect-ratio: 16/9) {
+            .fullscreen-bg__video {
+                width: 100%;
+                height: auto;
+            }
+        }
+
+        @media (max-aspect-ratio: 16/9) {
+            .fullscreen-bg__video {
+                width: auto;
+                height: 100%;
+            }
+        }
+
+        @media (min-aspect-ratio: 16/9) {
+            .fullscreen-bg__video {
+                height: 300%;
+                top: -100%;
+            }
+        }
+
+        @media (max-aspect-ratio: 16/9) {
+            .fullscreen-bg__video {
+                width: 300%;
+                left: -100%;
+            }
+        }
+
+        #footer-container {
+            display: flex;
+            flex-wrap: wrap;
+            margin-top: 0 !important
+        }
+
+        #big-footer {
+            box-sizing: border-box;
+            background: #FFEFE2;
+            color: #694C5C;
+            padding-top: 5vh;
+            flex-basis: 100%;
+            text-align: center;
+            padding-left: 12vw;
+            padding-right: 12vw;
+            font-size: 2.1vh;
+        }
+
+        form {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        input {
+            box-sizing: border-box;
+            height: 8vh;
+            flex-basis: 20vw;
+            margin-bottom: 5vh;
+            border-radius: 25px;
+            border: 1px solid #694c5c;
+            padding: 10px;
+
+        }
+
+        button {
+            width: 20%;
+            border-radius: 25px;
+            height: 8vh;
+            border: none;
+            background: #fd8f8f;
+            cursor: pointer;
+            font-family: 'Poppins', sans-serif;
+
+
+        }
+
+        input::placeholder {
+            color: #694c5c;
+        }
+
+        #button-container {
+            flex-basis: 100%;
+        }
+
+        input:focus {
+            outline: none;
+            border: 2px solid #db4242;
+        }
+
+        input:hover {
+            outline: none;
+            border: 2px solid #db4242;
+        }
+
+        #bottom-footer {
+            box-sizing: border-box;
+            background: #44233B;
+            width: 100%;
+            padding-top: 12vh;
+        }
+
+        .footer {
+            flex-wrap: wrap;
+            display: flex;
+            justify-content: center;
+            height: 30vh;
+        }
+
+        .footer li {
+            list-style: none;
+            margin-right: 5vw;
+        }
+
+        .footer a {
+            text-decoration: none;
+            color: #FD8F8F;
+            font-family: 'Poppins', sans-serif;
+            font-size: 2.5vh;
+        }
+
+        .footer a:hover {
+            color: #fff0e3
+        }
+
+        .footer a:active {
+            color: #fff0e3;
+        }
+
+        .section-heading {
+            font-family: 'Lora', serif;
+            font-size: 7vh;
+            color: #44233B;
+            font-weight: bolder;
+            letter-spacing: 2px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <section id="page-1">
+        <!-- <div id="VideoCont"> -->
+        <div class="fullscreen-bg">
+            <video loop muted autoplay poster="img/videoframe.jpg" class="fullscreen-bg__video">
+                <source src="1.webm" type="video/webm">
+                <source src="videos/1.mp4" type="video/mp4">
+                <source src="1.ogv" type="video/ogg">
+            </video>
+        </div>
+        <!-- <div id="head-text">COME...EXPERIENCE THE SUPER NATURAL</div>
+        <div id="support-text">MERGE INTO MRINTYUNJYA</div> -->
+        <nav class="navbar1">
+            <ul class="nav1">
+                <li><a href="#">xxxxxxxxxx</a></li>
+                <li><a href="#">abc@gmail.com</a></li>
+                <li id="htr"><a href="#">How to Reach</a></li>
+
+            </ul>
+        </nav>
+
+        <nav class="navbar2">
+            <ul class="nav2">
+                <li id="brand"><a href="about.html">About</a></li>
+                <li><a href="whatism.html">What is Mrityunjya</a></li>
+                <li><a href="ttd.html">Things To Do</a></li>
+                <li><a href="pilot.html">Pilot Programs</a></li>
+            </ul>
+        </nav>
+    </section>
+    <section id="page-2">
+
+        <div id="act-container">
+            <div id="act-container-head">OUR PROGRAMS...</div>
+            <div class='act act-left'>
+                <div class="act-logo-holder logo-1"></div>
+                <div class="act-head">Corporate Outings</div>
+                Spirituality is a state or experience that can provide individuals
+                <!-- with right direction, purpose and
+                 meaning of life. -->
+                <a href="">Read More</a>
+                <!--  It boosts moral and promotes inner wholeness and connectedness. The entire environment
+                of Mrityunjya Temple is highly spiritualized and supremely positive. Your employees will truly feel
+                re-energized and rejuvenated. This will in turn help them de-stress themselves from the pressure of
+                mundane and hectic life. Subsequently, being in such a soulful ambience they will naturally imbibe and
+                bring in core spiritual values, such as integrity, truthfulness and honesty to the workplace. Bear in
+                mind that a spiritually energized employee will have higher satisfaction and contentment level. This
+                will influence his or her productivity and eventual organizational profitability. -->
+            </div>
+
+            <div class="act act-right">
+                <div class="act-logo-holder logo-2"></div>
+                <div class="act-head ">Student Expeditions</div>
+                Send your dear ones to us and through our carefully crafted Leadership programs<a href="">Read More</a>
+                <!-- we will show them a new
+                meaning of life with its totality and possibilities. -->
+                <!-- Our programs are designed to groom a person’s
+                behavior, thoughts and attitude. Remember, that a spiritually intelligent student will be disciplined,
+                respect parents, teachers and also believe in God-The Ultimate Power. They will also be dedicated to
+                their studies, research and job, will have improved mental and physical health, better knowledge and
+                wisdom, will have clear and confident thoughts and they will exhibit a strong will-force. -->
+            </div>
+            <div class="act act-left">
+                <div class="act-logo-holder logo-3"></div>
+                <div class="act-head ">Curated Storytelling Tours</div>
+                Our expert storytellers are trained people
+                <!-- with profound knowledge on the Vedas and they will impart you
+                the fragrance of Vedic Wisdom . -->
+                <a href="">Read More</a>
+                <!-- Learn from them the stories and legends of Mahamrityunjya and Narasingha
+                Kshetra ,the untold story of Patal Ganga and many more.  We encourage you to do this because it supports
+                our livelihood activities and creates meaningful employment to the host community. -->
+
+
+            </div>
+            <div class="act act-right">
+                <div class="act-logo-holder logo-1"></div>
+                <div class="act-head ">Senior’s Spiritual Trips</div>
+                Spiritual development is a life-long process.Senior travelers are very safe with us. We pay extra
+                importance to senior citizen tours. <a href="">Read More</a>
+                <!-- Either a single, a couple, or in a small group of the same age, we
+                offer unique and interesting programs. Our leisurely and comfortable programs are combined with yoga,
+                dance, massage, meditation, discourse, photography and other such activities. You will also get an
+                opportunity to see how other seniors in this world live. -->
+
+            </div>
+            <div class="act act-left">
+                <div class="act-logo-holder logo-2"></div>
+                <div class="act-head ">Experience Ashram Life</div>
+                Staying in a truly Sanatani Hindu ashram provides a great opportunity to learn about spiritual practices
+                and Sadhna. <a href="">Read More</a>
+                <!-- If you are interested you can participate in chanting of sacred mantras, studying ancient
+                Hindu scriptures, or practice yoga and meditation. Being a volunteer in the Mahamrityunjya Temple
+                ashram, you will automatically become engaged in devotional service, considered to be the highest of all
+                spiritual practices! -->
+
+            </div>
+            <div class="act act-right">
+                <div class="act-logo-holder logo-3"></div>
+                <div class="act-head ">Camps And Workshops</div>
+                Choose Shri Shri Mahamrityunjya Temple for your school or college camps and workshops. This can be life
+                transforming for your students.  <a href="">Read More</a>
+                <!-- We have carefully established a strong network of home stays and camps
+                where you can stay and pursue your varied activities. -->
+
+            </div>
+            <div class="act act-left">
+                <div class="act-logo-holder logo-1"></div>
+                <div class="act-head ">Photographer's Delite</div>
+                Roam in and around the vast campus and capture your fond moments. This place is full of nature, purity
+                and calmness.<a href="">Read More</a>
+                <!-- Come and catch the most beautiful and soul-stirring landscapes of in and around Mrityunjya
+                Temple. -->
+            </div>
+            <div class="act act-right">
+                <div class="act-logo-holder logo-2"></div>
+                <div class="act-head ">Family Trip</div>
+                Come and visit Shri Shri Mahamrityunjya Temple with your family members, friends and dear ones..<a
+                    href="">Read More</a>
+                <!-- for a
+                unique and wholesome experience. We have designed different activities for them- from Yoga, Meditation,
+                Gau-Seva to guided Mahamrityunjya Mantra Chan -->
+
+            </div>
+            <div class="act act-left">
+                <div class="act-logo-holder logo-3"></div>
+                <div class="act-head ">Vedic Camps</div>
+                We are conducting specific dated Vedic camps for public.  <a href="">Read More</a>
+                <!-- Here in you can get acquainted with our
+                ancient heritage and practices and become part of various activities and volunteering. -->
+            </div>
+            <div class="act act-right">
+                <div class="act-logo-holder logo-1"></div>
+                <div class="act-head ">Only Women Trips</div>
+                Specially designed tours for women with lady storytellers.
+            </div>
+
+        </div>
+        <div id="abt-guru">
+            <div id="abt-guru-text">
+                <em>
+                    <div id="abt-guru-head">Shri Shri Bramharishi Mahamrityunjya Bhrigugiri Maharaj(Founder)</div>
+                </em>
+                Shri Shri Bramharishi Maha Mrityunjya Bhrigugiri Maharaj (Babaji) is considered to be a unique Rishi in
+                the present era who has acquired the Maha Mritunjay Vidya from his Iimmortal Guru Maha Rishi Markandey
+                Himself. With his spiritual insights, Baba has discovered two most important spiritual energy centers in
+                Assam, in the north eastern part of India – the Bheemashankar Jyotirlinga at Kshobhak Parvat,
+                Panchakanya Dham, Basistha, Guwahati and the Maha Mritunjay Shivlinga at Narashimha Kshetra,
+                Nagaon,Assam – which have both national and global significance. Guru Bhrigugiri is the only Man on
+                earth who is a Mahamrityunjya Siddha…
+            </div>
+            <div id="youT">
+                <iframe src="https://www.youtube.com/embed/ZQ_iQVNf0Pk" frameborder="0"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
+        </div>
+
+    </section>
+    <section id="page-3">
+
+    </section>
+    <section id="page-4">
+        <div class="phtogal-1">
+            <div id="phtotitle">EXPLORE</div>
+            <div class="phto" id="img1">
+                <div class="imgdesp">GAUSEVA</div>
+            </div>
+            <div class="phto" id="img2">
+                <div class="imgdesp">SANSKRIT SCHOOL</div>
+            </div>
+            <div class="phto" id="img3">
+                <div class="imgdesp">YOGA CLASSES</div>
+            </div>
+            <div class="phto" id="img4">
+                <div class="imgdesp">MAHAYAGNA</div>
+            </div>
+        </div>
+        <div id="phto-cont">
+            <div id="big-phto"></div>
+            <div id="phto-text">
+                <div id="phto-head"> Mahamrityunjya Mandir – <em>The World’s Tallest Unique Ling-Shaped Temple</em>
+                </div>
+
+
+                Raw power resides in the Bhoomi. This Bhoomi or land in which the Mahamrityunjya Mandir is built is
+                supremely powerful. Two Shakti’s (Powers) in their full potential are present here. One is called Mrita
+                Sanjeevani Shakti and the other is known as Mrityunjya Shakti.
+                Because of the divine and supremely powerful presence of these two Live Forces and Natural Cosmic
+                Energies, this Bhoomi, which is known as Narasimha Kshetra, in Puronigudam, Nagaon,Assam has become most
+                potent and powerful. Thus, anyone who visits this particular place will find the resistance power of his
+                or her body automatically augmented and increased.
+                Thousands and Thousands of years back Guru Shukracharya had established these two powers in this place
+                through His arduous Sadhna and Tapasya. <a href='/'>Read More</a>
+                <!-- However unfortunately, with the passage of time, these powers, in absence of any holistic and ritualistic activities, became inactive. In the year 1999 Bramharishi Mahamrityunjya Shri Shri Bhrigugiri Maharaj- the only man on earth who is a Mahamrityunjya Siddha, after realizing the significance of this particular tract of land, discovered these two living powers and activated them again through His intense Tapobal (Spiritual Strength). 
+Gurudev also performed numerous Vedic Yagnyas by following specific secret Ancient Scientific Systems to resurrect and reinstate these powers. Thus, as soon as these ancient Vedic rituals (Friction) were started, the sacred super powers consequentially got rejuvenated and resuscitated. Therefore they turned active again and thereafter assumed their full potent force. Which means they became Shakti-Sampanna .
+Presently these Shaktis are pervasive all throughout the Narasimha Kshetra and hence presently this Bhoomi has also become most supremely powerful. -->
+            </div>
+        </div>
+        <div class="phtogal-2">
+            <div class="phto" id="img5"></div>
+            <div class="phto" id="img6"></div>
+            <div class="phto" id="img7"></div>
+            <div class="phto" id="img8"></div>
+            <div class="phto" id="img9"></div>
+            <div class="phto" id="img10"></div>
+            <div class="phto" id="img11"></div>
+            <div class="phto" id="img12"></div>
+            <!-- <div class="phto" id="img13"></div>
+            <div class="phto" id="img14"></div>
+            <div class="phto" id="img15"></div>
+            <div class="phto" id="img16"></div> -->
+        </div>
+    </section>
+    <section id="page-5">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14857688.255584292!2d75.87478495076543!3d22.99532992671889!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x374521d50571b26f%3A0x9d0e74faf24753f2!2sMaha+Mrityunjay+Mandir!5e0!3m2!1sen!2sin!4v1558969808823!5m2!1sen!2sin"
+            width="800" height="600" frameborder="0" style="border:0;height:70vh;width:100%;margin:0;"
+            allowfullscreen></iframe>
+    </section>
+    <div id="footer-container">
+        <div id="big-footer">
+            <div class="section-heading">Learn To Be Sustainably Happy!</div><br><br>
+            Join the Happiness Program. Experience a calm mind, reduced anxiety increased energy levels and sustainable
+            happiness everyday!<br><br>
+            <form>
+                <input placeholder="Name">
+                <input placeholder="E-Mail">
+                <input placeholder="Phone Number">
+                <div id="button-container"><button>Register Now</button></div>
+
+            </form><br><br>
+        </div>
+        <div id="bottom-footer">
+            <ul class="footer">
+                <li id="brand"><a href="about.html">About</a></li>
+                <li><a href="whatism.html">What is Mrityunjya</a></li>
+                <li><a href="ttd.html">Things To Do</a></li>
+                <li><a href="pilot.html">Pilot Programs</a></li>
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Poppins|Lora&display=swap" rel="stylesheet">
+
+
+    <title>ABOUT</title>
+    <style>
+        * {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            font-size: 2.3vmin;
+            letter-spacing: 2px;
+        }
+
+        nav li a {
+            text-decoration: none;
+        }
+
+        nav ul {
+            list-style: none;
+        }
+
+        /* navbar first */
+        .navbar1 {
+            position: fixed;
+            z-index: 100;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: #FFEFE2;
+            height: 10vh;
+            line-height: 10vh;
+            color: #FD8F8F;
+
+            box-sizing: border-box;
+        }
+
+        .nav1 {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .nav1 li a {
+            color: #FD8F8F;
+
+        }
+
+        #htr {
+            flex-basis: 50vw;
+            text-align: right;
+        }
+
+        /* for second navbar */
+        .navbar2 {
+            position: fixed;
+            z-index: 100;
+            top: 10vh;
+            left: 0;
+            width: 100vw;
+            background: #412236;
+            height: 8vh;
+            line-height: 8vh;
+            color: black;
+
+
+
+        }
+
+        .nav2 {
+            display: flex;
+            justify-content: center;
+        }
+
+        .nav2 li a {
+            color: #FD8F8F;
+            font-size: 2.7vmin;
+
+        }
+
+        .nav2 li a:hover {
+            color: #fff0e3;
+        }
+
+        .nav2 li {
+            margin-right: 3vw;
+            margin-left: 3vw;
+        }
+
+        #caption-box {
+            background-image: url("images/abt-head.jpg");
+            height: 50vh;
+            position: relative;
+            top: 18vh;
+            width: 100%;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: top;
+            overflow-x: hidden;
+        }
+
+        #caption {
+            position: relative;
+            top: 38vh;
+            left: 8vw;
+            font-size: 5vh;
+            color: #fff0e3;
+            font-weight: bold;
+            font-family: 'Lora', serif;
+
+        }
+
+        #text-phto-container {
+            position: relative;
+            top: 33.3vh;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        #phto-container {
+            margin-top: 12vh;
+            box-sizing: border-box;
+            flex-basis: 40vw;
+            margin-left: 5vw;
+
+        }
+
+        #text-container {
+            flex-basis: 40vw;
+        }
+
+        .section-heading {
+            font-family: 'Lora', serif;
+            font-size: 7vh;
+            color: #44233B;
+            font-weight: bolder;
+            letter-spacing: 2px;
+        }
+
+        .sub-section-heading {
+            font-family: 'Lora', serif;
+            font-size: 3vh;
+            color: #44233B;
+            letter-spacing: 2px;
+            font-weight: bold;
+        }
+
+        #phto-container img {
+            display: block;
+            width: 100%;
+
+        }
+
+        #blue-section {
+            color: #CFB7B3;
+            box-sizing: border-box;
+            margin-right: 10vw;
+            margin-left: 10vw;
+            background-image: url("images/icon-4.png");
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: center;
+            font-size: 2.3vh;
+            letter-spacing: 2px;
+            line-height: 2.2;
+
+        }
+
+        #blue-section-container {
+            box-sizing: border-box;
+            flex-basis: 100%;
+            background-image: linear-gradient(180deg, #49263d 33%, #8c4e5d 65%);
+            padding-top: 12vh;
+            box-sizing: border-box;
+            padding-bottom: 5vh;
+        }
+
+        #big-footer {
+            box-sizing: border-box;
+            background: #FFEFE2;
+            color: #694C5C;
+            padding-top: 5vh;
+            flex-basis: 100%;
+            text-align: center;
+            padding-left: 12vw;
+            padding-right: 12vw;
+            font-size: 2.1vh;
+        }
+
+        form {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        input {
+            box-sizing: border-box;
+            height: 8vh;
+            flex-basis: 20vw;
+            margin-bottom: 5vh;
+            border-radius: 25px;
+            border: 1px solid #694c5c;
+            padding: 10px;
+
+        }
+
+
+        button {
+            width: 20%;
+            border-radius: 25px;
+            height: 8vh;
+            border: none;
+            background: #fd8f8f;
+            cursor: pointer;
+            font-family: 'Poppins', sans-serif;
+
+
+        }
+
+        input::placeholder {
+            color: #694c5c;
+        }
+
+        #button-container {
+            flex-basis: 100%;
+        }
+
+        input:focus {
+            outline: none;
+            border: 2px solid #db4242;
+        }
+
+        input:hover {
+            outline: none;
+            border: 2px solid #db4242;
+        }
+
+        #bottom-footer {
+            box-sizing: border-box;
+            background: #44233B;
+            width: 100%;
+            padding-top: 12vh;
+        }
+
+        .footer {
+            flex-wrap: wrap;
+            display: flex;
+            justify-content: center;
+            height: 30vh;
+        }
+
+        .footer li {
+            list-style: none;
+            margin-right: 5vw;
+        }
+
+        .footer a {
+            text-decoration: none;
+            color: #FD8F8F;
+            font-family: 'Poppins', sans-serif;
+            font-weight: bold;
+            font-size: 2.5vh;
+        }
+
+        .footer a:hover {
+            color: #fff0e3
+        }
+
+        .footer a:active {
+            color: #fff0e3;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar1">
+        <ul class="nav1">
+            <li><a href="#">xxxxxxxxxx</a></li>
+            <li><a href="#">abc@gmail.com</a></li>
+            <li id="htr"><a href="#">How to Reach</a></li>
+
+        </ul>
+    </nav>
+
+    <nav class="navbar2">
+        <ul class="nav2">
+            <li id="brand"><a href="about.html">About</a></li>
+            <li><a href="whatism.html">What is Mrityunjya</a></li>
+            <li><a href="ttd.html">Things To Do</a></li>
+            <li><a href="pilot.html">Pilot Programs</a></li>
+        </ul>
+    </nav>
+    <div id="caption-box">
+        <div id="caption">ABOUT US</div>
+    </div>
+
+    <div id="text-phto-container">
+        <div id="text-container">
+            <div class="section-heading">Our Core Vision
+                and Mission</div><br><br>
+            <div class="sub-section-heading">Vision</div><br><br>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat obcaecati ipsum enim. Sapiente libero
+            facere reiciendis consequatur vel quisquam quo rem velit quam? Placeat dolores maiores, maxime totam odio
+            debitis.<br><br>
+            <div class="sub-section-heading">Mission</div><br><br>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto, cupiditate deleniti! Quas culpa quisquam
+            distinctio nesciunt tempore amet molestiae aspernatur corporis, quia expedita in facilis iure corrupti quos.
+            Dolorum, ad.<br><br>
+        </div>
+        <div id="phto-container">
+            <img src="images/abt.jpg" />
+        </div>
+        <div id="blue-section-container">
+            <div id="blue-section" style="color:#cfb7b3">
+                <div class="section-heading" style="color:#fff0e3;">Learn Who We Are...
+                </div><br>
+                We specialize in spiritual journeys and sacred sites tours to some of the most beautiful and
+                soul-stirring
+                landscapes in Assam. With carefully crafted itineraries and passionate tour leaders you can be sure your
+                sacred travel experience will exceed your every expectation and will help you create a lifetime of
+                memories. At Mrityunjya Tourism we facilitate the learning of many ancient spiritual traditions through
+                their wisdom teachings, ceremonies, and healing practices. Join us on one of our spiritual journeys to
+                connect with the ancient energies that exist. Our tour leaders are ready to share their extensive
+                knowledge,
+                unique perspective, and Vedic wisdom to ensure your spiritual travel experience is both transformative
+                and
+                enjoyable. We take care of all the details so you can leave your worries at home and travel in safety
+                and
+                comfort with a small group of like-minded travellers, the kind of kindred spirits that help forge
+                life-long
+                friendships.
+                Our mission in Mrityunjya Tourism is to improve the quality of life for all beings in our local
+                community
+                through a variety of projects addressing social, educational, environmental and economic issues from a
+                practical, spiritual perspective. We are committed to working with people from all walks of life to find
+                innovative solutions to problems big and small.
+            </div>
+        </div>
+        <div id="big-footer">
+            <div class="section-heading">Learn To Be Sustainably Happy!</div><br><br>
+            Join the Happiness Program. Experience a calm mind, reduced anxiety increased energy levels and sustainable
+            happiness everyday!<br><br>
+            <form>
+                <input placeholder="Name">
+                <input placeholder="E-Mail">
+                <input placeholder="Phone Number">
+                <div id="button-container"><button>Register Now</button></div>
+
+            </form><br><br>
+        </div>
+        <div id="bottom-footer">
+            <ul class="footer">
+                <li id="brand"><a href="about.html">About</a></li>
+                <li><a href="whatism.html">What is Mrityunjya</a></li>
+                <li><a href="ttd.html">Things To Do</a></li>
+                <li><a href="pilot.html">Pilot Programs</a></li>
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>
