@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="https://fonts.googleapis.com/css?family=Poppins|Lora&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poppins|Lora|Cedarville+Cursive&display=swap" rel="stylesheet">
 
     <title>Mrityunjya Temple</title>
     <style>
@@ -67,14 +67,14 @@
 
         /* navbar first */
         .navbar1 {
-            position: fixed;
+            /* position: fixed; */
             z-index: 100;
             top: 0;
             left: 0;
             width: 100%;
             background-color: #FFEFE2;
-            height: 10vh;
-            line-height: 10vh;
+            height: 20vh;
+            line-height: 20vh;
             color: #FD8F8F;
             font-weight: bold;
             box-sizing: border-box;
@@ -82,30 +82,40 @@
 
         .nav1 {
             display: flex;
-            justify-content: space-around;
+            justify-content: center;
+            /* width: 100%; */
+            height: 100%;
         }
 
         .nav1 li a {
+            width: 20vw;
+            height: 20vh;
             color: #FD8F8F;
-
         }
 
-        #htr {
-            flex-basis: 50vw;
-            text-align: right;
+        #main-logo {
+            height: 20vh;
+            width: 40vw;
+            background-image: url("images/M-logo.png");
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            z-index: 10001;
         }
 
         /* for second navbar */
         .navbar2 {
-            position: fixed;
+            /* position: fixed; */
+            /* position: relative; */
             z-index: 100;
-            top: 10vh;
+            top: 20vh;
             left: 0;
             width: 100%;
             background: #412236;
             height: 8vh;
             line-height: 8vh;
             color: black;
+            filter: grayscale(20px);
 
 
 
@@ -204,6 +214,7 @@
         }
 
         .act {
+            border-radius: 10px;
             flex-basis: 25vw;
             box-sizing: border-box;
             margin-bottom: 10vh;
@@ -212,6 +223,12 @@
             text-align: center;
             color: #694C5C;
             padding: 3vw;
+            /* box-shadow: 10px 10px 5px 0px #7e4555; */
+            transition: all ease-in-out 0.1s;
+        }
+
+        .act:hover {
+            transform: scale(1.03);
             box-shadow: 10px 10px 5px 0px #7e4555;
         }
 
@@ -267,6 +284,7 @@
             /* margin-bottom: 10vh; */
             box-sizing: border-box;
             font-size: 2.3vh;
+            align-items: center;
 
 
         }
@@ -287,6 +305,7 @@
             flex-basis: 40vw;
             margin-right: 10vw;
             margin-left: 3vw;
+
         }
 
         #abt-guru-head {
@@ -294,6 +313,7 @@
             text-align: center;
             font-size: 4vh;
             margin-bottom: 2vh;
+            color: maroon;
         }
 
         #page-3 {
@@ -570,8 +590,12 @@
             background: #fd8f8f;
             cursor: pointer;
             font-family: 'Poppins', sans-serif;
+            transition: all cubic-bezier(0.165, 0.84, 0.44, 1) 0.2s
+        }
 
-
+        button:hover {
+            transform: scale(1.1);
+            box-shadow: 10px 10px 5px 0px #7e4555;
         }
 
         input::placeholder {
@@ -651,9 +675,9 @@
         <div id="support-text">MERGE INTO MRINTYUNJYA</div> -->
         <nav class="navbar1">
             <ul class="nav1">
-                <li><a href="#">xxxxxxxxxx</a></li>
-                <li><a href="#">abc@gmail.com</a></li>
-                <li id="htr"><a href="#">How to Reach</a></li>
+                <a href="index.html">
+                    <div id="main-logo"></div>
+                </a>
 
             </ul>
         </nav>
@@ -778,7 +802,8 @@
         <div id="abt-guru">
             <div id="abt-guru-text">
                 <em>
-                    <div id="abt-guru-head">Shri Shri Bramharishi Mahamrityunjya Bhrigugiri Maharaj(Founder)</div>
+                    <div id="abt-guru-head">Shri Shri Bramharishi Mahamrityunjya Bhrigugiri
+                        Maharaj<br>(Founder,Mrityunjya Temple,Nagaon)</div>
                 </em>
                 Shri Shri Bramharishi Maha Mrityunjya Bhrigugiri Maharaj (Babaji) is considered to be a unique Rishi in
                 the present era who has acquired the Maha Mritunjay Vidya from his Iimmortal Guru Maha Rishi Markandey
@@ -818,7 +843,9 @@
         <div id="phto-cont">
             <div id="big-phto"></div>
             <div id="phto-text">
-                <div id="phto-head"> Mahamrityunjya Mandir – <em>The World’s Tallest Unique Ling-Shaped Temple</em>
+                <div id="phto-head"> Mahamrityunjya Mandir<br> – <em
+                        style="font-family: 'Cedarville Cursive', cursive; font-size:3.5vh;">The World’s Tallest
+                        Unique Ling-Shaped Temple</em>
                 </div>
 
 
