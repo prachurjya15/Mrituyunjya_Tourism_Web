@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Guruji</title>
+    <style>
+        * {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            font-size: 2.3vmin;
+            letter-spacing: 2px;
+        }
+
+
+        /* nav li a {
+            text-decoration: none;
+            color: #FD8F8F
+        }
+
+        nav li a:hover {
+            color: #CFB7B3;
+        }
+
+        nav ul {
+            list-style: none;
+        }
+
+        .navbar {
+            box-sizing: border-box;
+            margin-top: 7vh;
+            background-color: inherit;
+            position: relative;
+            z-index: 10000;
+            filter: contrast(6.8)
+        }
+
+        .nav {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .nav-item {
+            flex-basis: 15vw;
+        }
+
+        #brand a {
+            color: #CFB7B3;
+            font-size: 3vh;
+        }
+
+        .nav-item a {
+            font-size: 2.5vh;
+        } */
+
+        nav li a {
+            text-decoration: none;
+        }
+
+        nav ul {
+            list-style: none;
+        }
+
+        /* navbar first */
+        .navbar1 {
+            /* position: fixed; */
+            z-index: 100;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: #FFEFE2;
+            height: 20vh;
+            line-height: 20vh;
+            color: #FD8F8F;
+            font-weight: bold;
+            box-sizing: border-box;
+        }
+
+        .nav1 {
+            display: flex;
+            justify-content: center;
+            /* width: 100%; */
+            height: 100%;
+        }
+
+        .nav1 li a {
+            width: 20vw;
+            height: 20vh;
+            color: #FD8F8F;
+        }
+
+        #main-logo {
+            height: 20vh;
+            width: 40vw;
+            background-image: url("images/M-logo.png");
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            z-index: 10001;
+        }
+
+        /* for second navbar */
+        .navbar2 {
+            /* position: fixed; */
+            /* position: relative; */
+            z-index: 100;
+            top: 20vh;
+            left: 0;
+            width: 100%;
+            background: #412236;
+            height: 8vh;
+            line-height: 8vh;
+            color: black;
+            filter: grayscale(20px);
+
+
+
+        }
+
+        .nav2 {
+            display: flex;
+            justify-content: center;
+        }
+
+        .nav2 li a {
+            color: #FD8F8F;
+            font-size: 2.7vmin;
+            font-weight: bold;
+        }
+
+        .nav2 li a:hover {
+            color: white;
+        }
+
+        .nav2 li {
+            margin-right: 3vw;
+            margin-left: 3vw;
+        }
+
+
+        #caption-box {
+            background-image: url("images/mrit-head.jpg");
+            height: 45vh;
+            position: relative;
+            width: 100%;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            overflow-x: hidden;
+        }
+
+        #caption {
+            position: relative;
+            top: 31vh;
+            left: 8vw;
+            font-size: 5vh;
+            color: white;
+            font-weight: bold;
+            font-family: 'Lora', serif;
+
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar1">
+        <ul class="nav1">
+            <a href="index.html">
+                <div id="main-logo"></div>
+            </a>
+
+        </ul>
+    </nav>
+
+    <nav class="navbar2">
+        <ul class="nav2">
+            <li id="brand"><a href="about.html">About</a></li>
+            <li><a href="whatism.html">What is Mrityunjya</a></li>
+            <li><a href="ttd.html">Things To Do</a></li>
+            <li><a href="pilot.html">Pilot Programs</a></li>
+        </ul>
+    </nav>
+    <div id="caption-box">
+        <div id="caption">About Guruji</div>
+    </div>
+
+</body>
+
+</html>

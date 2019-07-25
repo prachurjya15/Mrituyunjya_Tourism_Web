@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/css?family=Poppins|Lora|Cedarville+Cursive&display=swap" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 
     <title>Mrityunjya Temple</title>
     <style>
@@ -73,8 +74,8 @@
             left: 0;
             width: 100%;
             background-color: #FFEFE2;
-            height: 20vh;
-            line-height: 20vh;
+            height: 28vh;
+            line-height: 28vh;
             color: #FD8F8F;
             font-weight: bold;
             box-sizing: border-box;
@@ -82,25 +83,28 @@
 
         .nav1 {
             display: flex;
-            justify-content: center;
+            justify-content: space-around;
             /* width: 100%; */
             height: 100%;
+            flex: 1;
         }
 
         .nav1 li a {
             width: 20vw;
-            height: 20vh;
+            height: 28vh;
             color: #FD8F8F;
         }
 
         #main-logo {
-            height: 20vh;
+            height: 28vh;
             width: 40vw;
             background-image: url("images/M-logo.png");
             background-size: contain;
             background-repeat: no-repeat;
             background-position: center;
             z-index: 10001;
+            position: relative;
+            left: -12vw;
         }
 
         /* for second navbar */
@@ -108,7 +112,7 @@
             /* position: fixed; */
             /* position: relative; */
             z-index: 100;
-            top: 20vh;
+            top: 35vh;
             left: 0;
             width: 100%;
             background: #412236;
@@ -583,14 +587,15 @@
         }
 
         button {
-            width: 20%;
+            width: 25%;
             border-radius: 25px;
-            height: 8vh;
+            height: 10vh;
             border: none;
             background: #fd8f8f;
             cursor: pointer;
             font-family: 'Poppins', sans-serif;
-            transition: all cubic-bezier(0.165, 0.84, 0.44, 1) 0.2s
+            transition: all cubic-bezier(0.165, 0.84, 0.44, 1) 0.2s;
+            font-weight: bold;
         }
 
         button:hover {
@@ -627,7 +632,7 @@
             flex-wrap: wrap;
             display: flex;
             justify-content: center;
-            height: 30vh;
+            height: 28vh;
         }
 
         .footer li {
@@ -650,12 +655,61 @@
             color: #fff0e3;
         }
 
+        .footer-copyright {
+            color: #fff0e3;
+            text-align: center;
+            position: relative;
+            bottom: 2vh;
+            font-size: 2.3vh;
+        }
+
+        .footer-copyright a {
+            color: #FD8F8F;
+        }
+
         .section-heading {
             font-family: 'Lora', serif;
             font-size: 7vh;
             color: #44233B;
             font-weight: bolder;
             letter-spacing: 2px;
+        }
+
+        /* search button */
+        .search-form {
+            position: relative;
+            left: -5vw;
+            width: 33.3vw;
+            margin-left: 0;
+            display: flex;
+            top: 14vh;
+        }
+
+        .search-button {
+            background: #FD8F8F;
+            border-top-left-radius: 0;
+            border-bottom-left-radius: 0;
+            position: relative;
+            left: -5vw;
+            width: 20%;
+            height: 8vh;
+            font-size: 2.4vh;
+            font-weight: normal;
+        }
+
+        .search-button:hover {
+            box-shadow: none;
+            transform: none;
+        }
+
+        .social-icons a {
+            color: #db4242;
+            font-size: 5vh;
+        }
+
+        .search-input {
+            height: 8vh;
+
         }
     </style>
 </head>
@@ -674,10 +728,22 @@
         <!-- <div id="head-text">COME...EXPERIENCE THE SUPER NATURAL</div>
         <div id="support-text">MERGE INTO MRINTYUNJYA</div> -->
         <nav class="navbar1">
+
             <ul class="nav1">
+                <form class="search-form">
+                    <input type="search" class="search-input">
+                    <button class="search-button">Search</button></form>
                 <a href="index.html">
                     <div id="main-logo"></div>
                 </a>
+                <div class="social icons">
+                    <a href="https://facebook.com"><i style="color: #db4242;font-size: 7vh;margin-right:25px;"
+                            class="fa fa-facebook"></i></a>
+                    <a href="https://instagram.com"><i style="color: #db4242;font-size: 7vh;margin-right:25px;"
+                            class="fa fa-instagram"></i></a>
+                    <a href="https://youtube.com"><i style="color: #db4242;font-size: 7vh;"
+                            class="fa fa-youtube"></i></a>
+                </div>
 
             </ul>
         </nav>
@@ -698,7 +764,7 @@
             <div class='act act-left'>
                 <div class="act-logo-holder logo-1"></div>
                 <div class="act-head">Corporate Outings</div>
-                Spirituality is a state or experience that can provide individuals
+                Spirituality is a state or experience that can provide individuals<br>
                 <!-- with right direction, purpose and
                  meaning of life. -->
                 <a href="">Read More</a>
@@ -714,7 +780,8 @@
             <div class="act act-right">
                 <div class="act-logo-holder logo-2"></div>
                 <div class="act-head ">Student Expeditions</div>
-                Send your dear ones to us and through our carefully crafted Leadership programs<a href="">Read More</a>
+                Send your dear ones to us and through our carefully crafted Leadership programs<br><a href="">Read
+                    More</a>
                 <!-- we will show them a new
                 meaning of life with its totality and possibilities. -->
                 <!-- Our programs are designed to groom a person’s
@@ -726,7 +793,7 @@
             <div class="act act-left">
                 <div class="act-logo-holder logo-3"></div>
                 <div class="act-head ">Curated Storytelling Tours</div>
-                Our expert storytellers are trained people
+                Our expert storytellers are trained people<br>
                 <!-- with profound knowledge on the Vedas and they will impart you
                 the fragrance of Vedic Wisdom . -->
                 <a href="">Read More</a>
@@ -740,7 +807,7 @@
                 <div class="act-logo-holder logo-1"></div>
                 <div class="act-head ">Senior’s Spiritual Trips</div>
                 Spiritual development is a life-long process.Senior travelers are very safe with us. We pay extra
-                importance to senior citizen tours. <a href="">Read More</a>
+                importance to senior citizen tours.<br> <a href="">Read More</a>
                 <!-- Either a single, a couple, or in a small group of the same age, we
                 offer unique and interesting programs. Our leisurely and comfortable programs are combined with yoga,
                 dance, massage, meditation, discourse, photography and other such activities. You will also get an
@@ -751,7 +818,7 @@
                 <div class="act-logo-holder logo-2"></div>
                 <div class="act-head ">Experience Ashram Life</div>
                 Staying in a truly Sanatani Hindu ashram provides a great opportunity to learn about spiritual practices
-                and Sadhna. <a href="">Read More</a>
+                and Sadhna.<br> <a href="">Read More</a>
                 <!-- If you are interested you can participate in chanting of sacred mantras, studying ancient
                 Hindu scriptures, or practice yoga and meditation. Being a volunteer in the Mahamrityunjya Temple
                 ashram, you will automatically become engaged in devotional service, considered to be the highest of all
@@ -762,7 +829,7 @@
                 <div class="act-logo-holder logo-3"></div>
                 <div class="act-head ">Camps And Workshops</div>
                 Choose Shri Shri Mahamrityunjya Temple for your school or college camps and workshops. This can be life
-                transforming for your students.  <a href="">Read More</a>
+                transforming for your students.<br>  <a href="">Read More</a>
                 <!-- We have carefully established a strong network of home stays and camps
                 where you can stay and pursue your varied activities. -->
 
@@ -771,14 +838,14 @@
                 <div class="act-logo-holder logo-1"></div>
                 <div class="act-head ">Photographer's Delite</div>
                 Roam in and around the vast campus and capture your fond moments. This place is full of nature, purity
-                and calmness.<a href="">Read More</a>
+                and calmness.<br><a href="">Read More</a>
                 <!-- Come and catch the most beautiful and soul-stirring landscapes of in and around Mrityunjya
                 Temple. -->
             </div>
             <div class="act act-right">
                 <div class="act-logo-holder logo-2"></div>
                 <div class="act-head ">Family Trip</div>
-                Come and visit Shri Shri Mahamrityunjya Temple with your family members, friends and dear ones..<a
+                Come and visit Shri Shri Mahamrityunjya Temple with your family members, friends and dear ones..<br><a
                     href="">Read More</a>
                 <!-- for a
                 unique and wholesome experience. We have designed different activities for them- from Yoga, Meditation,
@@ -788,7 +855,7 @@
             <div class="act act-left">
                 <div class="act-logo-holder logo-3"></div>
                 <div class="act-head ">Vedic Camps</div>
-                We are conducting specific dated Vedic camps for public.  <a href="">Read More</a>
+                We are conducting specific dated Vedic camps for public.  <br><a href="">Read More</a>
                 <!-- Here in you can get acquainted with our
                 ancient heritage and practices and become part of various activities and volunteering. -->
             </div>
@@ -904,6 +971,7 @@ Presently these Shaktis are pervasive all throughout the Narasimha Kshetra and h
                 <li><a href="ttd.html">Things To Do</a></li>
                 <li><a href="pilot.html">Pilot Programs</a></li>
             </ul>
+            <div class="footer-copyright">Copyright @<a href="#">Mrityunjya Tourism.2019</a>.All Right Reserved</div>
         </div>
     </div>
 </body>
