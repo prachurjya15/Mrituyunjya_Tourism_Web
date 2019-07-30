@@ -63,6 +63,8 @@
         }
 
         nav ul {
+            margin: 0;
+            padding: 0;
             list-style: none;
         }
 
@@ -73,9 +75,11 @@
             top: 0;
             left: 0;
             width: 100%;
-            background-color: #FFEFE2;
+            /* background-color: #FFEFE2; */
+            /* background-image: linear-gradient(180deg, #49263d 33%, #8c4e5d 65%); */
+            background: #44233B;
             height: 28vh;
-            line-height: 28vh;
+            /* line-height: 28vh; */
             color: #FD8F8F;
             font-weight: bold;
             box-sizing: border-box;
@@ -83,34 +87,50 @@
 
         .nav1 {
             display: flex;
-            justify-content: space-around;
-            /* width: 100%; */
-            height: 100%;
+            width: 100%;
             flex: 1;
+            justify-content: space-evenly;
+            align-items: center;
+            flex-wrap: wrap;
         }
 
         .nav1 li a {
+            flex-basis: 12vw;
+            /* margin-right: 2vw; */
+            font-size: 2.5vh;
+            /* color: #694C5C; */
+            color: #FD8F8F;
+
+        }
+
+        .nav li a:nth-of-type(4) {
+            flex-basis: 12vw;
+        }
+
+        .nav li a:last-of-type {
+            margin-right: 0;
+        }
+
+        /* .nav1 li a {
             width: 20vw;
             height: 28vh;
             color: #FD8F8F;
-        }
+        } */
 
         #main-logo {
-            height: 28vh;
-            width: 40vw;
+            height: 27vh;
+            width: 10vw;
             background-image: url("images/M-logo.png");
             background-size: contain;
             background-repeat: no-repeat;
             background-position: center;
             z-index: 10001;
-            position: relative;
-            left: -12vw;
+            /* position: relative; */
+            /* left: -12vw; */
         }
 
         /* for second navbar */
-        .navbar2 {
-            /* position: fixed; */
-            /* position: relative; */
+        /* .navbar2 {
             z-index: 100;
             top: 35vh;
             left: 0;
@@ -143,7 +163,7 @@
         .nav2 li {
             margin-right: 3vw;
             margin-left: 3vw;
-        }
+        } */
 
 
         #page-1 {
@@ -289,6 +309,18 @@
 
         .logo-7 {
             background-image: url("images/icon7.png");
+        }
+
+        .logo-8 {
+            background-image: url("images/icon8.png");
+        }
+
+        .logo-9 {
+            background-image: url("images/icon9.png");
+        }
+
+        .logo-10 {
+            background-image: url("images/icon10.png");
         }
 
 
@@ -748,32 +780,29 @@
         <nav class="navbar1">
 
             <ul class="nav1">
-                <form class="search-form">
-                    <input type="search" class="search-input">
-                    <button class="search-button"><i class="fa fa-search" aria-hidden="true"></i></button></form>
-                <a href="index.html">
-                    <div id="main-logo"></div>
-                </a>
-                <div class="social icons">
-                    <a href="https://facebook.com"><i style="color: #db4242;font-size: 5vh;margin-right:25px;"
-                            class="fa fa-facebook"></i></a>
-                    <a href="https://instagram.com"><i style="color: #db4242;font-size: 5vh;margin-right:25px;"
-                            class="fa fa-instagram"></i></a>
-                    <a href="https://youtube.com"><i style="color: #db4242;font-size: 5vh;"
-                            class="fa fa-youtube"></i></a>
-                </div>
+                <li id="brand"><a href="about.html">About</a></li>
+                <li><a href="whatism.html">What is Mrityunjya</a></li>
+                <li><a href="">About programs</a></li>
+
+                <li><a href="index.html">
+                        <div id="main-logo"></div>
+                    </a></li>
+                <li><a href="pilot.html">Pilot Programs</a></li>
+                <li><a href="ttd.html">Things To Do</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
 
             </ul>
         </nav>
 
-        <nav class="navbar2">
+        <!-- <nav class="navbar2">
             <ul class="nav2">
                 <li id="brand"><a href="about.html">About</a></li>
                 <li><a href="whatism.html">What is Mrityunjya</a></li>
                 <li><a href="ttd.html">Things To Do</a></li>
                 <li><a href="pilot.html">Pilot Programs</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
             </ul>
-        </nav>
+        </nav> -->
     </section>
     <section id="page-2">
 
@@ -853,7 +882,7 @@
 
             </div>
             <div class="act act-left">
-                <div class="act-logo-holder logo-1"></div>
+                <div class="act-logo-holder logo-7"></div>
                 <div class="act-head ">Photographer's Delite</div>
                 Roam in and around the vast campus and capture your fond moments. This place is full of nature, purity
                 and calmness.<br><a href="">Read More</a>
@@ -861,7 +890,7 @@
                 Temple. -->
             </div>
             <div class="act act-right">
-                <div class="act-logo-holder logo-2"></div>
+                <div class="act-logo-holder logo-8"></div>
                 <div class="act-head ">Family Trip</div>
                 Come and visit Shri Shri Mahamrityunjya Temple with your family members, friends and dear ones..<br><a
                     href="">Read More</a>
@@ -871,14 +900,14 @@
 
             </div>
             <div class="act act-left">
-                <div class="act-logo-holder logo-3"></div>
+                <div class="act-logo-holder logo-9"></div>
                 <div class="act-head ">Vedic Camps</div>
                 We are conducting specific dated Vedic camps for public.  <br><a href="">Read More</a>
                 <!-- Here in you can get acquainted with our
                 ancient heritage and practices and become part of various activities and volunteering. -->
             </div>
             <div class="act act-right">
-                <div class="act-logo-holder logo-7"></div>
+                <div class="act-logo-holder logo-10"></div>
                 <div class="act-head ">Only Women Trips</div>
                 Specially designed tours for women with lady storytellers.
             </div>
