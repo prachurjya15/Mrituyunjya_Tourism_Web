@@ -5,9 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="https://fonts.googleapis.com/css?family=Poppins|Lora&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poppins|Lora|Kumar+One&display=swap" rel="stylesheet">
     <title>What is Mrityunjya</title>
     <style>
+        @font-face {
+            font-family: "Adventure";
+            src: url("fonts/fontB.ttf");
+        }
+
         * {
             margin: 0;
             font-family: 'Poppins', sans-serif;
@@ -30,70 +35,74 @@
             top: 0;
             left: 0;
             width: 100%;
-            background-color: #FFEFE2;
-            height: 10vh;
-            line-height: 10vh;
+            background-color: #412236;
+            height: 7vh;
+            line-height: 7vh;
             color: #FD8F8F;
-
             box-sizing: border-box;
         }
 
         .nav1 {
             display: flex;
-            justify-content: space-around;
+            justify-content: center;
         }
 
-        .nav1 li a {
-            color: #FD8F8F;
-
-        }
-
-        #htr {
+        #part1,
+        #part2 {
             flex-basis: 50vw;
-            text-align: right;
+            display: flex;
         }
+
+        #part2 {
+            justify-content: flex-end;
+        }
+
+        #part2 li a,
+        #part1 li a {
+            color: white;
+            margin-right: 2vw;
+        }
+
 
         /* for second navbar */
         .navbar2 {
             position: fixed;
             z-index: 100;
-            top: 10vh;
+            top: 7vh;
             left: 0;
             width: 100vw;
-            background: #412236;
-            height: 8vh;
-            line-height: 8vh;
+            background: rgba(255, 255, 255, 0.67);
+            height: 15vh;
+            line-height: 15vh;
             color: black;
+        }
 
+        .main-title-head {
+            flex-basis: 40vw;
+        }
 
-
+        .main-title-head a {
+            font-family: 'Kumar One', cursive;
         }
 
         .nav2 {
             display: flex;
-            justify-content: center;
         }
 
         .nav2 li a {
-            color: #FD8F8F;
-            font-size: 2.7vmin;
-
-        }
-
-        .nav2 li a:hover {
-            color: white;
-        }
-
-        .nav2 li {
-            margin-right: 3vw;
-            margin-left: 3vw;
+            /* font-family: "Adventure"; */
+            margin-right: 2vw;
+            flex: 1;
+            color: maroon;
+            font-size: 2.7vh;
+            font-weight: bold;
         }
 
         #caption-box {
             background-image: url("images/mrit-head.jpg");
-            height: 45vh;
+            height: 48vh;
             position: relative;
-            top: 18vh;
+            top: 7.2vh;
             width: 100%;
             background-size: cover;
             background-repeat: no-repeat;
@@ -124,8 +133,7 @@
             margin-top: 12vh;
             box-sizing: border-box;
             flex-basis: 40vw;
-            margin-left: 5vw;
-
+            margin-left: 8vw;
         }
 
         #phto-container img {
@@ -165,7 +173,7 @@
         #blue-section-container {
             box-sizing: border-box;
             flex-basis: 100%;
-            background-image: linear-gradient(180deg, #49263d 33%, #8c4e5d 65%);
+            background-image: linear-gradient(180deg, #8c4e5d 33%, #49263d 65%);
             padding-top: 12vh;
             box-sizing: border-box;
             padding-bottom: 5vh;
@@ -272,22 +280,27 @@
 <body>
     <nav class="navbar1">
         <ul class="nav1">
-            <li><a href="#">xxxxxxxxxx</a></li>
-            <li><a href="#">abc@gmail.com</a></li>
-            <li id="htr"><a href="#">How to Reach</a></li>
+            <div id="part1">
+                <li><a href="#">xxxxxxxxxx</a></li>
+                <li><a href="#">abc@gmail.com</a></li>
+            </div>
+            <div id="part2">
+                <li><a href="#">BheemaShankar JyotirLinga</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </div>
 
         </ul>
     </nav>
 
     <nav class="navbar2">
         <ul class="nav2">
-            <li id="brand"><a href="about.html">About</a></li>
-            <li><a href="whatism.html">What is Mrityunjya</a></li>
-            <li><a href="ttd.html">Things To Do</a></li>
+            <li class="main-title-head"><a style="font-size:6vh;" href="index.html">Mrityunjya</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="whatism.html">What is Mrityunjaya</a></li>
             <li><a href="pilot.html">Pilot Programs</a></li>
+            <li><a href="ttd.html">Things To Do</a></li>
         </ul>
     </nav>
-
 
     <div id="caption-box">
         <div id="caption">What is Mrityunjya</div>
