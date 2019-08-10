@@ -761,6 +761,14 @@
             height: 8vh;
 
         }
+
+        /* .read-more {
+            display: none;
+        } */
+
+        .display {
+            display: none;
+        }
     </style>
 </head>
 
@@ -843,11 +851,15 @@
                 Our expert storytellers are trained people<br>
                 <!-- with profound knowledge on the Vedas and they will impart you
                 the fragrance of Vedic Wisdom . -->
-                <a href="">Read More</a>
+                <span class="link-read-more">Read More</span>
                 <!-- Learn from them the stories and legends of Mahamrityunjya and Narasingha
                 Kshetra ,the untold story of Patal Ganga and many more.  We encourage you to do this because it supports
                 our livelihood activities and creates meaningful employment to the host community. -->
-
+                <div class="read-more display">
+                    lorem ipsum dolor sit upsum Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi
+                    placeat aliquam assumenda autem rem quae! Praesentium, incidunt? Quaerat quidem, esse explicabo est
+                    iste doloremque non ducimus nulla suscipit labore. Aliquid!
+                </div>
 
             </div>
             <div class="act act-right">
@@ -962,6 +974,7 @@
                         Unique Ling-Shaped Temple</em>
                 </div>
 
+                Read More
 
                 Raw power resides in the Bhoomi. This Bhoomi or land in which the Mahamrityunjya Mandir is built is
                 supremely powerful. Two Shakti’s (Powers) in their full potential are present here. One is called Mrita
@@ -1021,6 +1034,17 @@ Presently these Shaktis are pervasive all throughout the Narasimha Kshetra and h
             <div class="footer-copyright">Copyright @<a href="#">Mrityunjya Tourism.2019</a>.All Right Reserved</div>
         </div>
     </div>
+
+    <script>
+        let readMoreLink = document.querySelectorAll(".link-read-more");
+        let readMore = document.querySelectorAll(".read-more");
+        for (let i = 0; i < readMoreLink.length; i++) {
+            readMoreLink[i].addEventListener("click", () => {
+                readMoreLink[i].textContent = "Show Less";
+                readMore[i].classList.toggle("display");
+            })
+        }
+    </script>
 </body>
 
 </html>
