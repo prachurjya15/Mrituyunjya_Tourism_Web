@@ -5,10 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="https://fonts.googleapis.com/css?family=Poppins|Lora|Cedarville+Cursive|Kumar+One&display=swap"
+    <link href="https://fonts.googleapis.com/css?family=Poppins|Lora|Cedarville+Cursive|Kumar+One|Yatra+One&display=swap"
         rel="stylesheet">
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <title>Mrityunjya Temple</title>
     <style>
         * {
@@ -19,223 +19,17 @@
         }
 
 
-        /* nav li a {
-            text-decoration: none;
-            color: #FD8F8F
-        }
-
-        nav li a:hover {
-            color: #CFB7B3;
-        }
-
-        nav ul {
-            list-style: none;
-        }
-
-        .navbar {
-            box-sizing: border-box;
-            margin-top: 7vh;
-            background-color: inherit;
-            position: relative;
-            z-index: 10000;
-            filter: contrast(6.8)
-        }
-
-        .nav {
-            display: flex;
-            justify-content: space-around;
-        }
-
-        .nav-item {
-            flex-basis: 15vw;
-        }
-
-        #brand a {
-            color: #CFB7B3;
-            font-size: 3vh;
-        }
-
-        .nav-item a {
-            font-size: 2.5vh;
-        } */
-
-        nav li a {
-            text-decoration: none;
-        }
-
-        nav ul {
-            list-style: none;
-        }
-
-        /* navbar first */
-        .navbar1 {
-            z-index: 100;
-            top: 0;
-            left: 0;
-            width: 100%;
-            background-color: #412236;
-            height: 7vh;
-            line-height: 7vh;
-            color: #FD8F8F;
-            box-sizing: border-box;
-        }
-
-        .nav1 {
-            display: flex;
-            justify-content: center;
-        }
-
-        #part1,
-        #part2 {
-            flex-basis: 50vw;
-            display: flex;
-        }
-
-        #part2 {
-            justify-content: flex-end;
-        }
-
-        #part2 li a,
-        #part1 li a {
-            color: white;
-            margin-right: 2vw;
-        }
-
-
-        /* for second navbar */
-        .navbar2 {
-            z-index: 100;
-            top: 7vh;
-            left: 0;
-            width: 100vw;
-            background: rgba(255, 255, 255, 0.67);
-            height: 15vh;
-            line-height: 15vh;
-            color: black;
-        }
-
-        .main-title-head {
-            flex-basis: 40vw;
-        }
-
-        .main-title-head a {
-            font-family: 'Kumar One', cursive;
-        }
-
-        .nav2 {
-            display: flex;
-        }
-
-        .nav2 li a {
-            /* font-family: "Adventure"; */
-            margin-right: 2vw;
-            flex: 1;
-            color: maroon;
-            font-size: 2.7vh;
-            font-weight: bold;
-        }
-
-
-
-        /* .nav1 li a {
-            width: 20vw;
-            height: 28vh;
-            color: #FD8F8F;
-        } */
-
-        #main-logo {
-            height: 27vh;
-            width: 10vw;
-            background-image: url("images/M-logo.png");
-            background-size: contain;
-            background-repeat: no-repeat;
-            background-position: center;
-            z-index: 10001;
-            /* position: relative; */
-            /* left: -12vw; */
-        }
-
-        /* for second navbar */
-        /* .navbar2 {
-            z-index: 100;
-            top: 35vh;
-            left: 0;
-            width: 100%;
-            background: #412236;
-            height: 8vh;
-            line-height: 8vh;
-            color: black;
-            filter: grayscale(20px);
-
-
-
-        }
-
-        .nav2 {
-            display: flex;
-            justify-content: center;
-        }
-
-        .nav2 li a {
-            color: #FD8F8F;
-            font-size: 2.7vmin;
-            font-weight: bold;
-        }
-
-        .nav2 li a:hover {
-            color: white;
-        }
-
-        .nav2 li {
-            margin-right: 3vw;
-            margin-left: 3vw;
-        } */
+     
 
 
         #page-1 {
             height: 100vh;
             overflow-x: hidden;
+            background:url('images/2.jpg');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
         }
-
-        #myVideo {
-            height: 100vh;
-            width: 100%;
-            position: absolute;
-            left: 0vw;
-            top: 0;
-        }
-
-        /* #VideoCont{
-            box-sizing:border-box;
-            position:absolute;
-            left:0;
-            top:25vh;
-            width:100vw;
-        } */
-
-        /* #head-text {
-            color: white;
-            font-weight: bold;
-            font-size: 5vh;
-            position: relative;
-            top: 70vh;
-            left: 12vw;
-            letter-spacing: 2px;
-            background-color: #6e3f05;
-            width: 60vw;
-
-        }
-
-        #support-text {
-            color: white;
-            font-size: 3vh;
-            position: relative;
-            top: 75vh;
-            left: 12vw;
-            background-color: #6e3f05;
-            width: 30vw;
-        } */
-
         #page-2 {
             box-sizing: border-box;
             overflow-x: hidden;
@@ -635,14 +429,17 @@
 
         #big-footer {
             box-sizing: border-box;
-            background: #FFEFE2;
+            /* background: #FFEFE2; */
+            background-image: linear-gradient(180deg, #49263d 33%, #8c4e5d 65%);
             color: #694C5C;
-            padding-top: 5vh;
+            padding-top: 20vh;
             flex-basis: 100%;
             text-align: center;
             padding-left: 12vw;
             padding-right: 12vw;
             font-size: 2.1vh;
+            color: #CFB7B3;
+            height:80vh;
         }
 
         form {
@@ -657,30 +454,32 @@
             flex-basis: 20vw;
             margin-bottom: 5vh;
             border-radius: 25px;
-            border: 1px solid #694c5c;
+            border: 2px solid #CFB7B3;
             padding: 10px;
+            background: #8c4e5d;
 
         }
 
         button {
-            width: 25%;
+            color: #694C5C;
+            width: 15%;
             border-radius: 25px;
             height: 10vh;
             border: none;
             background: #fd8f8f;
             cursor: pointer;
             font-family: 'Poppins', sans-serif;
-            transition: all cubic-bezier(0.165, 0.84, 0.44, 1) 0.2s;
+            transition: all cubic-bezier(0.165, 0.84, 0.44, 1) 0.1s;
             font-weight: bold;
         }
 
         button:hover {
-            transform: scale(1.1);
+            transform: scale(1.01);
             box-shadow: 10px 10px 5px 0px #7e4555;
         }
 
         input::placeholder {
-            color: #694c5c;
+            color: #CFB7B3;
         }
 
         #button-container {
@@ -708,7 +507,7 @@
             flex-wrap: wrap;
             display: flex;
             justify-content: center;
-            height: 70vh;
+            height: 40vh;
         }
 
         .footer li {
@@ -735,7 +534,7 @@
             color: #fff0e3;
             text-align: center;
             position: relative;
-            bottom: 10vh;
+            bottom: 22vh;
             font-size: 2.3vh;
             padding-bottom: 20vh;
         }
@@ -794,71 +593,125 @@
             display: none;
             text-align: center;
         }
+        #page-6{ 
+            height:70vh;
+            background: #FFEFE2;
+            padding:10vh 5vw;
+            text-align:center;
+        }
+        .logos{
+            display:flex;
+            justify-content: center;
+           padding-bottom: 5vh;
+        }
+        #real-logo{
+            height:30vh;
+            width:30vw;
+            background: url('images/M-logo.png');
+            background-position: center;
+            background-size: contain; 
+            background-repeat: no-repeat;
+        }
+        .write-up{
+            padding:0 5vw 0 5vw;
+             
+        }
+        nav li a {
+            text-decoration: none;
+        }
+
+        nav ul {
+            list-style: none;
+        }
+
+        /* navbar first */
+        .navbar1 {
+            z-index: 100;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: #FFEFE2;
+            height: 19vh;
+            color: #FD8F8F;
+            margin: 0;
+            box-sizing: border-box;
+            padding:18px 0 18px 0;
+        }
+
+        .nav1 {
+            display: flex;
+            justify-content: center;
+            background: url("images/Header.png");
+            height:100%;
+            width:100%;
+            background-position: center;
+            background-size: contain;
+            background-repeat: no-repeat; 
+  
+        }
+
+        .nav1 li a {
+            color: #FD8F8F;
+        }
+        /* for second navbar */
+        .navbar2 {    
+            background: #412236;
+            height: 8vh;
+            line-height: 8vh;
+            color: black;
+        }
+        .navbar2.onScroll {
+            z-index:10000;
+            position:fixed;
+            width:100vw;
+            top: 0;
+            left: 0;
+            background: #412236;
+            height: 8vh;
+            line-height: 8vh;
+            color: black;
+        }
+        .nav2 {
+            display: flex;
+            justify-content: center;
+        }
+
+        .nav2 li a {
+            color: #FD8F8F;
+            font-size: 2.7vmin;
+            text-decoration: none;
+
+        }
+
+        .nav2 li a:hover {
+            color: white;
+        }
+
+        .nav2 li {
+            margin-right: 3vw;
+            margin-left: 3vw;
+        }
+
     </style>
 </head>
 
 <body>
+    <nav class="navbar1">
+              <div class="nav1">
+                
+              </div>
+            </nav>
+        
+            <nav class="navbar2">
+                <ul class="nav2">
+                    <li id="brand"><a href="about.html">About</a></li>
+                    <li><a href="whatism.html">What is Mrityunjya</a></li>
+                    <li><a href="ttd.html">Things To Do</a></li>
+                    <li><a href="pilot.html">Pilot Programs</a></li>
+                </ul>
+    </nav>
     <section id="page-1">
-        <!-- <div id="VideoCont"> -->
-        <div class="fullscreen-bg">
-            <video loop muted autoplay poster="img/videoframe.jpg" class="fullscreen-bg__video">
-                <source src="1.webm" type="video/webm">
-                <source src="videos/1.mp4" type="video/mp4">
-                <source src="1.ogv" type="video/ogg">
-            </video>
-        </div>
-        <nav class="navbar1">
-            <ul class="nav1">
-                <div id="part1">
-                    <li><a href="#">xxxxxxxxxx</a></li>
-                    <li><a href="#">abc@gmail.com</a></li>
-                </div>
-                <div id="part2">
-                    <li><a href="#">BheemaShankar JyotirLinga</a></li>
-                    <li><a href="#">Contact Us</a></li>
-                </div>
-
-            </ul>
-        </nav>
-
-        <nav class="navbar2">
-            <ul class="nav2">
-                <li class="main-title-head"><a style="font-size:6vh;" href="index.html">Mrityunjya</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="whatism.html">What is Mrityunjaya</a></li>
-                <li><a href="pilot.html">Pilot Programs</a></li>
-                <li><a href="ttd.html">Things To Do</a></li>
-            </ul>
-        </nav>
-
-        <!-- <div id="head-text">COME...EXPERIENCE THE SUPER NATURAL</div>
-        <div id="support-text">MERGE INTO MRINTYUNJYA</div> -->
-        <!-- <nav class="navbar1">
-
-            <ul class="nav1">
-                <li id="brand"><a href="about.html">About</a></li>
-                <li><a href="whatism.html">What is Mrityunjya</a></li>
-                <li><a href="">About programs</a></li>
-
-                <li><a href="index.html">
-                        <div id="main-logo"></div>
-                    </a></li>
-                <li><a href="pilot.html">Pilot Programs</a></li>
-                <li><a href="ttd.html">Things To Do</a></li>
-                <li><a href="contact.html">Contact Us</a></li>
-
-            </ul>
-        </nav> -->
-
-        <!-- <nav class="navbar2">
-            <ul class="nav2">
-                <li id="brand"><a href="about.html">About</a></li>
-                <li><a href="whatism.html">What is Mrityunjya</a></li>
-                <li><a href="ttd.html">Things To Do</a></li>
-                <li><a href="pilot.html">Pilot Programs</a></li>
-                <li><a href="contact.html">Contact Us</a></li>
-            </ul>
-        </nav> -->
+        
     </section>
     <section id="page-2">
 
@@ -1057,7 +910,7 @@
             <div id="big-phto"></div>
             <div id="phto-text">
                 <div id="phto-head"> Mahamrityunjya Mandir<br> – <em
-                        style="font-family: 'Cedarville Cursive', cursive; font-size:3.5vh;">The World’s Tallest
+                        style="font-family: 'Yatra One', cursive;; font-size:3.5vh;">The World’s Tallest
                         Unique Ling-Shaped Temple</em>
                 </div>
 
@@ -1126,9 +979,17 @@ Presently these Shaktis are pervasive all throughout the Narasimha Kshetra and h
             width="800" height="600" frameborder="0" style="border:0;height:70vh;width:100%;margin:0;"
             allowfullscreen></iframe>
     </section>
+    <section id="page-6">
+          <div class="logos">
+              <div id="real-logo"></div>
+          </div>
+          <div class="write-up">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad explicabo nulla reprehenderit aut praesentium in nobis quibusdam sequi molestias ab. Dicta excepturi illum quaerat reiciendis dolores nobis quas enim minima. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorum ratione voluptatem sed recusandae pariatur expedita velit aut minus repellendus illum officiis maxime reprehenderit adipisci modi reiciendis exercitationem laudantium, numquam iste
+          </div>
+        </section>
     <div id="footer-container">
         <div id="big-footer">
-            <div class="section-heading">Learn To Be Sustainably Happy!</div><br><br>
+            <div class="section-heading"style="  color: #FFF0E3;">Learn To Be Sustainably Happy!</div><br><br>
             Join the Happiness Program. Experience a calm mind, reduced anxiety increased energy levels and sustainable
             happiness everyday!<br><br>
             <form>
@@ -1143,9 +1004,6 @@ Presently these Shaktis are pervasive all throughout the Narasimha Kshetra and h
             <ul class="footer">
                 <li id="brand"><a href="about.html">About</a></li>
                 <li><a href="whatism.html">What is Mrityunjya</a></li>
-                <li>
-                    <div id="fot-logo"></div>
-                </li>
                 <li><a href="ttd.html">Things To Do</a></li>
                 <li><a href="pilot.html">Pilot Programs</a></li>
             </ul>
@@ -1160,6 +1018,18 @@ Presently these Shaktis are pervasive all throughout the Narasimha Kshetra and h
         let readMore = document.querySelectorAll(".read-more");
         let readMore2 = document.querySelector(".read-more-abt-link");
         let modal = document.querySelector(".overlay-info");
+        let nav1=document.querySelector('.navbar1');
+        let nav2=document.querySelector('.navbar2');
+
+
+     window.addEventListener('scroll',()=>{
+        if(window.pageYOffset>100){
+           nav2.classList.add('onScroll');
+        }else{
+            nav2.classList.remove('onScroll');
+        }
+     });
+        
 
         for (let i = 0; i < readMoreLink.length; i++) {
             readMoreLink[i].addEventListener("click", () => {
