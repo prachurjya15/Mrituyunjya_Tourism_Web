@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Titillium+Web&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Poppins|Lora&display=swap" rel="stylesheet">
     <title>Things To Do</title>
@@ -26,50 +27,51 @@
 
         /* navbar first */
         .navbar1 {
-            position: fixed;
             z-index: 100;
             top: 0;
             left: 0;
             width: 100%;
             background-color: #FFEFE2;
-            height: 10vh;
-            line-height: 10vh;
+            height: 19vh;
             color: #FD8F8F;
-
+            margin: 0;
             box-sizing: border-box;
+            padding:18px 0 18px 0;
+            display:flex;
         }
 
         .nav1 {
             display: flex;
-            justify-content: space-around;
+            justify-content:center;
+            background: url("images/Header.png");
+            height:100%;
+            width:50%;
+            background-position: center;
+            background-size: contain;
+            background-repeat: no-repeat; 
         }
 
         .nav1 li a {
             color: #FD8F8F;
-
         }
-
-        #htr {
-            flex-basis: 50vw;
-            text-align: right;
-        }
-
         /* for second navbar */
-        .navbar2 {
-            position: fixed;
-            z-index: 100;
-            top: 10vh;
-            left: 0;
-            width: 100vw;
+        .navbar2 {    
             background: #412236;
             height: 8vh;
             line-height: 8vh;
             color: black;
-
-
-
         }
-
+        .navbar2.onScroll {
+            z-index:10000;
+            position:fixed;
+            width:100vw;
+            top: 0;
+            left: 0;
+            background: #412236;
+            height: 8vh;
+            line-height: 8vh;
+            color: black;
+        }
         .nav2 {
             display: flex;
             justify-content: center;
@@ -78,6 +80,7 @@
         .nav2 li a {
             color: #FD8F8F;
             font-size: 2.7vmin;
+            text-decoration: none;
 
         }
 
@@ -89,19 +92,49 @@
             margin-right: 3vw;
             margin-left: 3vw;
         }
-
+        .nav-logo{
+            /* background:url("images/M-logo.png"); */
+            height:100%;
+            width:25%;
+            /* background-position: center;
+            background-size: contain;
+            background-repeat: no-repeat; */
+        }
+        .nav-social{
+            justify-self: flex-end;
+            width:25%;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .nav-social i{
+            font-size: 2.5vh;
+        }
+        .nav-social a{
+            text-decoration: none;
+            color:white;
+        }
         #caption-box {
             background-image: url("images/ttd-head.jpg");
             height: 45vh;
             position: relative;
-            top: 18vh;
             width: 100%;
             background-size: cover;
             background-repeat: no-repeat;
             background-position: center;
             overflow: hidden;
         }
-
+        .social-circle{
+            background: black;
+            text-align: center;
+            height:6vh;
+            box-sizing:border-box;
+            padding:10px;
+            width:3vw;
+            border-radius: 50%;
+            margin-right: 25px;
+            background:#DB4242;
+        }
         #caption {
             position: relative;
             top: 31vh;
@@ -125,7 +158,7 @@
 
         #text-phto-container {
             position: relative;
-            top: 33.3vh;
+            top: 10vh;
             display: flex;
             justify-content: center;
             flex-wrap: wrap;
@@ -264,7 +297,7 @@
             flex-wrap: wrap;
             display: flex;
             justify-content: center;
-            height: 15vh;
+            height: 40vh;
         }
 
         .footer li {
@@ -276,7 +309,6 @@
             text-decoration: none;
             color: #FD8F8F;
             font-family: 'Poppins', sans-serif;
-
             font-size: 2.5vh;
         }
 
@@ -287,27 +319,42 @@
         .footer a:active {
             color: #fff0e3;
         }
+
+        .footer-copyright {
+            color: #fff0e3;
+            text-align: center;
+            position: relative;
+            bottom: 22vh;
+            font-size: 2.3vh;
+            padding-bottom: 20vh;
+        }
+
+        .footer-copyright a {
+            color: #FD8F8F;
+        }
     </style>
 </head>
 
 <body>
-    <nav class="navbar1">
-        <ul class="nav1">
-            <li><a href="#">xxxxxxxxxx</a></li>
-            <li><a href="#">abc@gmail.com</a></li>
-            <li id="htr"><a href="#">How to Reach</a></li>
-
-        </ul>
-    </nav>
-
-    <nav class="navbar2">
-        <ul class="nav2">
-            <li id="brand"><a href="about.html">About</a></li>
-            <li><a href="whatism.html">What is Mrityunjya</a></li>
-            <li><a href="ttd.html">Things To Do</a></li>
-            <li><a href="pilot.html">Pilot Programs</a></li>
-        </ul>
-    </nav>
+        <nav class="navbar1">
+                <div class="nav-logo"></div>
+                  <div class="nav1">   
+                  </div>
+                <div class="nav-social">
+                  <div class="social-circle"><a href="https://facebook.com"><i class="fa fa-facebook"></i></a></div>
+                  <div class="social-circle"><a href="https://facebook.com"><i class="fa fa-twitter"></i></a></div>
+                  <div class="social-circle"> <a href="https://facebook.com"><i class="fa fa-youtube"></i></a></div>
+                </div>
+                </nav>
+            
+                <nav class="navbar2">
+                    <ul class="nav2">
+                        <li id="brand"><a href="about.html">About</a></li>
+                        <li><a href="whatism.html">What is Mrityunjya</a></li>
+                        <li><a href="ttd.html">Things To Do</a></li>
+                        <li><a href="pilot.html">Pilot Programs</a></li>
+                    </ul>
+        </nav>
     <div id="caption-box">
         <div id="caption">THINGS TO DO</div>
     </div>
@@ -441,15 +488,32 @@
             </form><br><br>
         </div>
         <div id="bottom-footer">
-            <ul class="footer">
-                <li id="brand"><a href="about.html">About</a></li>
-                <li><a href="whatism.html">What is Mrityunjya</a></li>
-                <li><a href="ttd.html">Things To Do</a></li>
-                <li><a href="pilot.html">Pilot Programs</a></li>
-            </ul>
-        </div>
-    </div>
+                <ul class="footer">
+                    <li id="brand"><a href="about.html">About</a></li>
+                    <li><a href="whatism.html">What is Mrityunjya</a></li>
+                    <li><a href="ttd.html">Things To Do</a></li>
+                    <li><a href="pilot.html">Pilot Programs</a></li>
+                </ul>
+    
+    
+                <div class="footer-copyright">Copyright @<a href="#">Mrityunjya Tourism.2019</a>.All Right Reserved</div>
+            </div>
 
+    </div>
+    <script>
+            let nav1=document.querySelector('.navbar1');
+               let nav2=document.querySelector('.navbar2');
+       
+       
+            window.addEventListener('scroll',()=>{
+               if(window.pageYOffset>100){
+                  nav2.classList.add('onScroll');
+               }else{
+                   nav2.classList.remove('onScroll');
+               }
+            });
+           
+           </script>
 </body>
 
 </html>
