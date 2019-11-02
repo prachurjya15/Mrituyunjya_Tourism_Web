@@ -44,10 +44,11 @@
             justify-content:center;
             background: url("images/Header.png");
             height:100%;
-            width:50%;
+            width:70%;
             background-position: center;
-            background-size: contain;
+            background-size: cover;
             background-repeat: no-repeat; 
+            cursor:pointer;
         }
 
         .nav1 li a {
@@ -401,6 +402,7 @@
                         <li><a href="whatism.html">What is Mrityunjya</a></li>
                         <li><a href="ttd.html">Things To Do</a></li>
                         <li><a href="pilot.html">Pilot Programs</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
                     </ul>
         </nav>
     <div id="caption-box">
@@ -550,7 +552,11 @@
     <script>
             let nav1=document.querySelector('.navbar1');
                let nav2=document.querySelector('.navbar2');
-       
+               var logo=document.querySelector(".nav1");
+
+logo.addEventListener("click",()=>{
+    window.location.href="http://127.0.0.1:5500/index.html"
+})
        
             window.addEventListener('scroll',()=>{
                if(window.pageYOffset>100){

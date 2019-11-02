@@ -49,10 +49,11 @@
             justify-content:center;
             background: url("images/Header.png");
             height:100%;
-            width:50%;
+            width:70%;
             background-position: center;
-            background-size: contain;
+            background-size: cover;
             background-repeat: no-repeat; 
+            cursor:pointer;
         }
 
         .nav1 li a {
@@ -320,6 +321,46 @@
             position: relative;
             bottom: 10vh;
         }
+        .excavate{
+            height:70vh;
+            width:100%;
+            background: maroon;
+            text-align: center;
+            padding-top:20px;
+            font-size:20px;
+            display:flex;
+            flex-wrap:wrap;
+            justify-content: center;
+        }
+        .ex-img{
+               width:20%;
+               height:70%;
+               margin:14px;
+        }
+        .ex-head{
+            flex-basis:100%;
+            font-size:40px;
+            font-family: 'Poppins', sans-serif;
+            font-weight: bold;;
+        }
+        #ex-img-1{
+            background-image: url("images/ex-img-1.jpg");
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+        #ex-img-2{
+            background-image: url("images/ex-img-2.jpg");
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+        #ex-img-3{
+            background-image: url("images/ex-img-3.jpg");
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
     </style>
 
 </head>
@@ -342,6 +383,7 @@
                         <li><a href="whatism.html">What is Mrityunjya</a></li>
                         <li><a href="ttd.html">Things To Do</a></li>
                         <li><a href="pilot.html">Pilot Programs</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
                     </ul>
         </nav>
 
@@ -452,6 +494,13 @@
             <span id="phto-describer">Three Shaktis,Hara Hari and Bagala combine together to form Mrityunjya</span>
             <img src="images/mrit-body.jpg">
         </div>
+        <div class="excavate">
+        <div class="ex-head"> Artifates found in excavation site...</div>
+            <div id="ex-img-1" class="ex-img"></div>
+            <div id="ex-img-2" class="ex-img"></div>
+            <div id="ex-img-3" class="ex-img"></div>
+
+        </div>
         <div id="blue-section-container">
             <div id="blue-section" style="color:#cfb7b3">
                 <div class="section-heading" style="color:#fff0e3;">Other Benefits Includes: </div>
@@ -508,7 +557,12 @@
             let nav1=document.querySelector('.navbar1');
                let nav2=document.querySelector('.navbar2');
        
-       
+               var logo=document.querySelector(".nav1");
+
+logo.addEventListener("click",()=>{
+    window.location.href="http://127.0.0.1:5500/index.html"
+})
+
             window.addEventListener('scroll',()=>{
                if(window.pageYOffset>100){
                   nav2.classList.add('onScroll');

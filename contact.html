@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Contact Us!!</title>
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poppins|Lora|Kumar+One&display=swap" rel="stylesheet">
+    <style>
+    @font-face {
+        font-family: "Adventure";
+        src: url("fonts/fontB.ttf");
+    }
+
+    * {
+        margin: 0;
+        font-family: 'Poppins', sans-serif;
+        font-size: 2.3vmin;
+        letter-spacing: 2px;
+    }
+
+    nav li a {
+        text-decoration: none;
+    }
+
+    nav ul {
+        list-style: none;
+    }
+
+    /* navbar first */
+    .navbar1 {
+        z-index: 100;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: #FFEFE2;
+        height: 19vh;
+        color: #FD8F8F;
+        margin: 0;
+        box-sizing: border-box;
+        padding:18px 0 18px 0;
+        display:flex;
+    }
+
+    .nav1 {
+        display: flex;
+        justify-content:center;
+        background: url("images/Header.png");
+        height:100%;
+        width:70%;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat; 
+        cursor:pointer;
+    }
+
+    .nav1 li a {
+        color: #FD8F8F;
+    }
+    /* for second navbar */
+    .navbar2 {    
+        background: #412236;
+        height: 8vh;
+        line-height: 8vh;
+        color: black;
+    }
+    .navbar2.onScroll {
+        z-index:10000;
+        position:fixed;
+        width:100vw;
+        top: 0;
+        left: 0;
+        background: #412236;
+        height: 8vh;
+        line-height: 8vh;
+        color: black;
+    }
+    .nav2 {
+        display: flex;
+        justify-content: center;
+    }
+
+    .nav2 li a {
+        color: #FD8F8F;
+        font-size: 2.7vmin;
+        text-decoration: none;
+
+    }
+
+    .nav2 li a:hover {
+        color: white;
+    }
+
+    .nav2 li {
+        margin-right: 3vw;
+        margin-left: 3vw;
+    }
+    .nav-logo{
+        /* background:url("images/M-logo.png"); */
+        height:100%;
+        width:25%;
+        /* background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat; */
+    }
+    .nav-social{
+        justify-self: flex-end;
+        width:25%;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .nav-social i{
+        font-size: 2.5vh;
+    }
+    .nav-social a{
+        text-decoration: none;
+        color:white;
+    }
+    .social-circle{
+        background: black;
+        text-align: center;
+        height:6vh;
+        box-sizing:border-box;
+        padding:10px;
+        width:3vw;
+        border-radius: 50%;
+        margin-right: 25px;
+        background:#DB4242;
+    }
+    #bottom-footer {
+            box-sizing: border-box;
+            background: #44233B;
+            width: 100%;
+            padding-top: 12vh;
+        }
+
+        .footer {
+            flex-wrap: wrap;
+            display: flex;
+            justify-content: center;
+            height: 40vh;
+        }
+
+        .footer li {
+            list-style: none;
+            margin-right: 5vw;
+        }
+
+        .footer a {
+            text-decoration: none;
+            color: #FD8F8F;
+            font-family: 'Poppins', sans-serif;
+            font-size: 2.5vh;
+        }
+
+        .footer a:hover {
+            color: #fff0e3
+        }
+
+        .footer a:active {
+            color: #fff0e3;
+        }
+
+        .footer-copyright {
+            color: #fff0e3;
+            text-align: center;
+            position: relative;
+            bottom: 22vh;
+            font-size: 2.3vh;
+            padding-bottom: 20vh;
+        }
+
+        .footer-copyright a {
+            color: #FD8F8F;
+        }
+        #concept-container {
+            margin-bottom: 8vh;
+            flex-basis: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .concept-child {
+            margin-top: 5vh;
+            flex-basis: 23vw;
+            box-sizing: border-box;
+            font-size: 30px;
+            text-align: center;
+            background-color: #FFEFE2;
+            margin-right: 2vw;
+            padding: 2vh 2vw;
+            transition: linear all 0.2s;
+        }
+
+        .concept-child:hover {
+            transform: scale(1.03);
+            box-shadow: 10px 10px 5px 0px rgba(61, 17, 60, 1);
+        }
+
+        #concept-logo-holder-1 {
+            margin-top: 2vh;
+            margin-bottom: 5vh;
+            box-sizing: border-box;
+            width: 100%;
+            height: 20vh;
+            background-image: url('images/icon1.png');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
+        #concept-logo-holder-2 {
+            margin-top: 2vh;
+            margin-bottom: 2vh;
+            box-sizing: border-box;
+            width: 100%;
+            height: 20vh;
+            background-image: url('images/icon2.png');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
+        #concept-logo-holder-3 {
+            margin-top: 2vh;
+            margin-bottom: 2vh;
+            box-sizing: border-box;
+            width: 100%;
+            height: 20vh;
+            background-image: url('images/icon3.png');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
+
+        .concept-child .section-heading {
+            font-size: 25px;
+            margin-bottom:14px;
+        }
+
+        .concept-text {
+            font-size: 14px;
+            margin-bottom:50px;
+        }
+        .section-heading {
+            margin-top:20px;
+            font-family: 'Lora', serif;
+            font-size: 50px;
+            color: #44233B;
+            font-weight: bolder;
+            letter-spacing: 2px;
+            text-align:center;
+            margin-bottom: 20px;
+        }
+        input{
+            flex-basis:25%;
+            margin:40px;
+            height:60px;
+            outline:none;
+            box-sizing: border-box;
+            padding:20px;
+            font-size: 22px;
+            border-radius:25px;
+            border:none;
+            border:2px solid #ddd;
+        }
+        textarea{
+            flex-basis:60%;
+            margin:40px;
+            border-radius: 22px;
+            outline:none;
+            padding:13.6px 28.8px;
+            font-size: 22px;
+            border:2px solid #ddd;
+        }
+        form{
+            display: flex;
+            flex-wrap:wrap;
+            justify-content: center;
+        }
+        input:focus{
+          border:2px solid #db4242;
+        }
+        textarea:focus{
+          border:2px solid #db4242;
+        }
+        input:hover{
+            border:2px solid #fd8f8f;
+        }
+        textarea:hover{
+            border:2px solid #fd8f8f;
+        }
+        .contact-us{
+            padding:20px;
+            background:#FFEFE2;
+        }
+        button{
+            width:28vw;
+            height:10vh;
+            border-radius: 25px;
+            outline:none;
+            background:#FD8F8F;
+            border:none;
+            font-size: 22px;
+            color:#694c5c;
+            cursor:pointer;
+            margin-bottom: 25px;
+        }
+
+    </style>
+</head>
+<body>
+        <nav class="navbar1">
+                <div class="nav-logo"></div>
+                  <div class="nav1">   
+                  </div>
+                <div class="nav-social">
+                  <div class="social-circle"><a href="https://facebook.com"><i class="fa fa-facebook"></i></a></div>
+                  <div class="social-circle"><a href="https://facebook.com"><i class="fa fa-twitter"></i></a></div>
+                  <div class="social-circle"> <a href="https://facebook.com"><i class="fa fa-youtube"></i></a></div>
+                </div>
+                </nav>
+            
+                <nav class="navbar2">
+                    <ul class="nav2">
+                        <li id="brand"><a href="about.html">About</a></li>
+                        <li><a href="whatism.html">What is Mrityunjya</a></li>
+                        <li><a href="ttd.html">Things To Do</a></li>
+                        <li><a href="pilot.html">Pilot Programs</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+        </nav> 
+        <div id="concept-container">
+                <div class="section-heading" style="flex-basis:100%;text-align: center;">CONTACT US!</div><br><br>
+                <div class="concept-child">
+                    
+                    <div id="concept-logo-holder-1"></div>
+                    <div class="section-heading">Address</div>
+                    <div class="concept-text">
+                            100 Warren St<br>
+                            Jersey City, NJ 07302
+                    </div>
+                </div>
+                <div class="concept-child">
+                  
+                    <div id="concept-logo-holder-2"></div>
+                    <div class="section-heading">MAIL</div>
+                    <div class="concept-text">
+                            info@example.com<br>
+                            volunteer@example.com
+                    </div>
+                </div>
+                <div class="concept-child">
+                    
+                    <div id="concept-logo-holder-3"></div>
+                    <div class="section-heading">HOURS</div>
+                    <div class="concept-text">Monday - Saturday
+                            <br>8:00 AM - 8:30 PM
+    
+                    </div>
+                </div>
+            </div>
+    <div class="contact-us">
+        <div class="section-heading">Have a Question?<br>
+                Drop Us a Line!</div>
+<form>
+    <input type="text" placeholder="name*">
+    <input type="email" placeholder="email*">
+    <textarea rows="10" cols="80" placeholder="message*"></textarea>
+    <button type="submit">Register Now</button>
+</form>
+
+    </div>
+       
+            <div id="bottom-footer">
+                    <ul class="footer">
+                        <li id="brand"><a href="about.html">About</a></li>
+                        <li><a href="whatism.html">What is Mrityunjya</a></li>
+                        <li><a href="ttd.html">Things To Do</a></li>
+                        <li><a href="pilot.html">Pilot Programs</a></li>
+                    </ul>
+        
+        
+                    <div class="footer-copyright">Copyright @<a href="#">Mrityunjya Tourism.2019</a>.All Right Reserved</div>
+                </div>
+    
+    
+        </div> 
+        <script>
+                let nav1=document.querySelector('.navbar1');
+                   let nav2=document.querySelector('.navbar2');
+                   var logo=document.querySelector(".nav1");
+
+logo.addEventListener("click",()=>{
+    window.location.href="http://127.0.0.1:5500/index.html"
+})
+           
+                window.addEventListener('scroll',()=>{
+                   if(window.pageYOffset>100){
+                      nav2.classList.add('onScroll');
+                   }else{
+                       nav2.classList.remove('onScroll');
+                   }
+                });
+               
+               </script>
+</body>
+</html>

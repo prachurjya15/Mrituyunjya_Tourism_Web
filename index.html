@@ -613,6 +613,7 @@
         }
         .write-up{
             padding:0 5vw 0 5vw;
+            text-align: justify;
              
         }
         nav li a {
@@ -643,10 +644,11 @@
             justify-content:center;
             background: url("images/Header.png");
             height:100%;
-            width:50%;
+            width:70%;
             background-position: center;
-            background-size: contain;
+            background-size: cover;
             background-repeat: no-repeat; 
+            cursor:pointer;
         }
 
         .nav1 li a {
@@ -733,7 +735,7 @@
             width:100%;
             height:100%;
         }
-        button.slick-next,button.slick-next:hover {
+        /* button.slick-next,button.slick-next:hover {
   position: absolute;
   top: 41%;
   right: 75px;
@@ -751,16 +753,16 @@ button.slick-prev,button.slick-prev:hover{
   background-size: 95px;
       background-position-x: right;
   
-}
+} */
 button.slick-prev  :hover{
 
 }
-.slick-prev:before, .slick-next:before {
+/* .slick-prev:before, .slick-next:before {
   font-size: 70px;
   color: #DB4242;
   line-height: inherit;
   font-weight: bold;
-}
+} */
        
     </style>
 </head>
@@ -783,6 +785,7 @@ button.slick-prev  :hover{
                     <li><a href="whatism.html">What is Mrityunjya</a></li>
                     <li><a href="ttd.html">Things To Do</a></li>
                     <li><a href="pilot.html">Pilot Programs</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
                 </ul>
     </nav>
     <section id="page-1">
@@ -1002,7 +1005,8 @@ button.slick-prev  :hover{
                 potent and powerful. Thus, anyone who visits this particular place will find the resistance power of his
                 or her body automatically augmented and increased.
                 Thousands and Thousands of years back Guru Shukracharya had established these two powers in this place
-                through His arduous Sadhna and Tapasya. <div class="read-more-abt-link">Read More</div>
+                through His arduous Sadhna and Tapasya. 
+                <!-- <div class="read-more-abt-link">Read More</div> -->
                 <div class="overlay-info">
                     Raw power resides in the Bhoomi. This Bhoomi or land in which the Mahamrityunjya Mandir is built is
                     supremely powerful. Two Shakti’s (Powers) in their full potential are present here. One is called
@@ -1114,6 +1118,11 @@ Presently these Shaktis are pervasive all throughout the Narasimha Kshetra and h
         let modal = document.querySelector(".overlay-info");
         let nav1=document.querySelector('.navbar1');
         let nav2=document.querySelector('.navbar2');
+         var logo=document.querySelector(".nav1");
+
+logo.addEventListener("click",()=>{
+    window.location.href="http://127.0.0.1:5500/index.html"
+})
 
 
      window.addEventListener('scroll',()=>{
