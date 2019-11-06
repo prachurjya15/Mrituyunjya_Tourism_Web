@@ -788,6 +788,10 @@ button.slick-prev  :hover{
             color:#db4242;
             transform:translateY(5px);
         }
+        #car-4{
+           object-fit: contain;
+           object-position: 0 -40vh;
+        }
 
     </style>
 </head>
@@ -818,9 +822,12 @@ button.slick-prev  :hover{
     </nav>
     <section id="page-1">
         <div class="carousel">
-     <div class="slides"><img src="images/car-1.jpg"></div>
      <div class="slides"><img src="images/car-2.jpg"></div>
-     <div class="slides"><img src="images/2.jpg" ></div></div>
+     <div class="slides"><img src="images/car-5.jpg"></div>
+     <div class="slides"><img src="images/car-1.jpg" ></div>
+     <div class="slides"><img id="car-4"src="images/car-4.jpg" ></div>
+    
+    </div>
     </section>
     <section id="page-2">
 
@@ -1134,7 +1141,7 @@ Presently these Shaktis are pervasive all throughout the Narasimha Kshetra and h
       slidesToShow: 1,
       adaptiveHeight:true,
         autoplay:true,
-        autoplaySpeed:500,
+        autoplaySpeed:2000,
         fade:true,
         
 
