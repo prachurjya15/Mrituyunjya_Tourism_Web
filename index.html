@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="https://fonts.googleapis.com/css?family=Poppins|Lora|Cedarville+Cursive|Kumar+One|Yatra+One&display=swap"
+    <link href="https://fonts.googleapis.com/css?family=Poppins|Lora|Cedarville+Cursive|Kumar+One|Yatra+One|Montserrat&display=swap"
         rel="stylesheet">
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
@@ -272,6 +272,8 @@
             flex-basis: 50vw;
             height: 70vh;
             background: url("images/7.jpg");
+            background-position: center;
+            background-repeat: no-repeat;
         }
 
         #phto-text {
@@ -287,6 +289,7 @@
             font-weight: bold;
             position: relative;
             top: -5vh;
+            color:maroon;
         }
 
         .phtogal-2 {
@@ -309,7 +312,7 @@
         }
 
         #img7 {
-            background: url("images/new.jpg");
+            background: url("images/img-new.jpg");
             background-size: cover;
             background-position: center;
         }
@@ -470,6 +473,7 @@
             font-family: 'Poppins', sans-serif;
             transition: all cubic-bezier(0.165, 0.84, 0.44, 1) 0.1s;
             font-weight: bold;
+            transition: all ease-in-out 0.1s;
         }
 /* 
         button:hover {
@@ -600,9 +604,9 @@
             text-align: center;
         }
         #page-6{ 
-            height:100vh;
+            height:88vh;
             background: #FFEFE2;
-            padding:10vh 5vw;
+            padding:0vh 5vw;
             text-align:center;
            
         }
@@ -780,7 +784,9 @@ button.slick-prev  :hover{
             background-repeat: no-repeat; */
             display:flex;
             padding-left:35px;
+            padding-top:30px;
             align-items: center;
+            flex-direction: column;
         }
         .ph-no{
             background: #f6e0ce;
@@ -788,6 +794,7 @@ button.slick-prev  :hover{
             font-size: 18px;
             border-radius: 32px;
             color:#44233b;
+            font-size: 15px;
         }
         .fa-phone{
             margin-right: 15px;
@@ -801,12 +808,19 @@ button.slick-prev  :hover{
         }
         .welcome-text{
             color:#fd8f8f;
-            font-family: 'Poppins', sans-serif;
+            font-family: 'Montserrat', sans-serif;
             font-size:20px;
             text-align: center;
             letter-spacing: 3px;
             font-weight: bold;
 
+        }
+        .book-text{
+            font-weight: bold;
+            color:#fd8f8f;
+            font-family: 'Montserrat', sans-serif;
+            font-size:13px;
+            margin-bottom: 5px;
         }
 
     </style>
@@ -815,7 +829,8 @@ button.slick-prev  :hover{
 <body>
     <nav class="navbar1">
             <div class="nav-logo">
-                <div class="ph-no"><i class="fa fa-phone" aria-hidden="true"></i>8011354233</div>
+                <div class="book-text">For Bookings Call..</div>
+                <div class="ph-no"><i class="fa fa-phone" aria-hidden="true"></i>+91 8011354233</div>
             </div>
               <div class="nav1">   
               </div>
@@ -1041,8 +1056,8 @@ button.slick-prev  :hover{
         <div id="phto-cont">
             <div id="big-phto"></div>
             <div id="phto-text">
-                <div id="phto-head"> Mahamrityunjya Mandir<br> – <em
-                        style="font-family: 'Yatra One', cursive;; font-size:3.5vh;">The World’s Tallest
+                <div id="phto-head"> Mahamrityunjya Mandir<br>  <em
+                        style="font-family: 'Yatra One', cursive;; font-size:3.5vh;color:maroon">-The World’s Tallest
                         Unique Ling-Shaped Temple</em>
                 </div>
 

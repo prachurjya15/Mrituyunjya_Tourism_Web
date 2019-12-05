@@ -258,6 +258,7 @@
             cursor: pointer;
             font-family: 'Poppins', sans-serif;
             color: #694c5c;
+            transition: all ease-in-out 0.1s;
         }
 
         button:hover {
@@ -341,7 +342,7 @@
         }
 
         .excavate {
-            height: 70vh;
+            height: 100vh;
             width: 100%;
             background-color: #FFEFE2;
             text-align: center;
@@ -354,6 +355,7 @@
 
         .ex-img {
 margin:5px;
+margin-top:0;
         }
 
         .ex-head {
@@ -361,12 +363,14 @@ margin:5px;
             font-size: 40px;
             font-family: 'Poppins', sans-serif;
             font-weight: bold;
+            padding: 0;
+            box-sizing: border-box;
         }
 
         #ex-img-1 {
             margin-left: 20px;
             width: 50%;
-            height: 70%;
+            height: 50%;
             background-image: url("images/ex-img-1.jpg");
             background-size: cover;
             background-repeat: no-repeat;
@@ -375,7 +379,7 @@ margin:5px;
         }
 .e-container{
     width:47%;
-    height: 70%;
+    height: 50%;
 }
 
         #ex-img-2 {
@@ -427,10 +431,11 @@ margin:5px;
         }
         .e-wrt{
             text-align: center;
-            margin:70px 50px;
+            margin:20px 40px;
             font-size: 20px;
             font-weight: bold;
             color:#44233b;
+            margin-top: 0;
 
         }
     </style>
@@ -572,17 +577,17 @@ margin:5px;
         </div>
         <div class="excavate">
             <div class="ex-head"> Artifates found in excavation site...</div>
+            <div class="e-wrt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt vel molestias nesciunt exercitationem officia nam voluptate, natus error quas mollitia fuga reprehenderit assumenda impedit laboriosam quam voluptas dolorum eius necessitatibus.</div>
 
             <div id="ex-img-1" class="ex-img">
-              <div class="e-wrt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt vel molestias nesciunt exercitationem officia nam voluptate, natus error quas mollitia fuga reprehenderit assumenda impedit laboriosam quam voluptas dolorum eius necessitatibus.</div>
-
+           
             </div>
             <div class="e-container">
             <div id="ex-img-2" class="ex-img">
-                <div class="e-wrt">Lorem ipsum dolor sit amet consectetur adipisicing elit. </div>
+               
             </div>
                 <div id="ex-img-3" class="ex-img">
-                    <div class="e-wrt">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+                  
                 </div>
             </div>
         </div>
