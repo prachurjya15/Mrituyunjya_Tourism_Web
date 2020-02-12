@@ -354,6 +354,135 @@
         input:focus::placeholder{
        color:transparent;
   }
+  .navbar-m{
+      display: none;
+  }
+  .m-ham{
+      display: none;
+  }
+  
+  @media only screen and (max-width: 1150px) {
+    form{
+                justify-content: center;
+                flex-wrap: wrap;
+                flex-direction: column;
+                align-items: center;
+                width: 100%;
+            }
+            input{
+                flex-basis: 100%;
+    width: 80%;
+    /* height: 100px; */
+    font-size: 18px;
+}
+button{
+    width: 100%;
+    /* flex-basis: 100%; */
+    font-size: 18px;
+    padding: 20px;
+    text-align: center;
+    height: auto;
+}
+            .write-up{
+                font-size: 10px;
+            }
+            #phto-cont{
+                height:150vh;
+            }
+            .footer li {
+    list-style: none;
+    margin-right: 5vw;
+    flex-basis: 100%;
+    text-align: center;
+}
+.footer-copyright{
+    bottom:0;
+}
+.footer-copyright a {
+    color: #FD8F8F;
+    font-size: 15px;
+}
+#text-container {
+    flex-basis: 80%;
+    font-size: 19px;
+}
+#phto-container{
+    display: none;
+}
+.navbar1{
+    display: none;
+}
+.navbar2{
+    display: none;
+}
+.navbar-m{
+    display: flex;
+    height:20vh;
+    width: 100%;
+    background-color: #FFEFE2;
+    justify-content: center;
+    align-items: center;
+}
+.m-logo{
+    /* background-color: red; */
+    width:100%;
+    height: 80%;
+    background-image: url("images/Header.png");
+    background-size: cover;
+    background-position:center;
+    background-repeat: no-repeat;
+}
+.m-ham{
+display: block;
+position: fixed;
+    z-index: 200;
+    top: 44px;
+    left: 90%;
+    font-size: 30px;
+  color: #412236;
+    cursor: pointer;
+}
+.m-menu{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index:6000;
+    position: fixed;
+    top: 0;
+    background-color: #412236;
+    width: 100%;
+   right:100%;
+}
+.m-close{
+    color:white;
+    font-weight: bold;
+    font-size: 25px;
+    position: relative;
+    left:40%;
+    top:-30%;
+    cursor: pointer;
+}
+.m-menu-link>a{
+    font-size: 23px;
+    color:white;
+    font-weight: bold;
+    text-decoration: none;
+}
+  
+}
+.m-menu{
+    position:fixed;
+    right:-100%;
+}
+@media only screen and (max-width: 780px) {
+    form{
+                justify-content: center;
+            }
+}
+
+
     </style>
 </head>
 
@@ -380,6 +509,20 @@
                         
                     </ul>
         </nav>
+        <nav class="navbar-m">
+            <div class="m-logo"></div>
+            <div></div>
+        </nav>
+        <div class="m-ham"><i class="fa fa-bars"></i></div>
+        <div class="m-menu">
+            <div class="m-close">X</div>
+            <div class="m-menu-link"><a href="index.html">Home</a></div>
+            <div class="m-menu-link"><a href="about.html">About</a></div>
+            <div class="m-menu-link"><a href="pilot.html">Pilot Programs</a></div>
+            <div class="m-menu-link"><a href="ttd.html">Things To Do</a></div>
+            <div class="m-menu-link"><a href="whatism.html">What is Mrityunjya</a></div>
+            <div class="m-menu-link"><a href="contact.html">Contact Us</a></div>
+              </div>
     <div id="caption-box">
         <div id="caption">ABOUT US</div>
     </div>
@@ -433,11 +576,11 @@
             <div class="section-heading">Learn To Be Sustainably Happy!</div><br><br>
             Join the Happiness Program. Experience a calm mind, reduced anxiety increased energy levels and sustainable
             happiness everyday!<br><br>
-            <form>
-                <input placeholder="Name">
-                <input placeholder="E-Mail">
-                <input placeholder="Phone Number">
-                <div id="button-container"><button>Register Now</button></div>
+            <form method="POST" action='/send'>
+                <input name="name" placeholder="Name">
+                <input name="email" placeholder="E-Mail">
+                <input name="phno" placeholder="Phone Number">
+                <div id="button-container"><button type="submit">Register Now</button></div>
 
             </form><br><br>
         </div>
@@ -472,7 +615,17 @@ logo.addEventListener("click",()=>{
             nav2.classList.remove('onScroll');
         }
      });
-    
+
+     let ham=document.querySelector(".m-ham");
+     let close=document.querySelector(".m-close")
+     let menu=document.querySelector(".m-menu");
+    ham.addEventListener("click",()=>{
+        menu.style.right=0;
+    })
+    close.addEventListener("click",()=>{
+        menu.style.right=100+"%";
+    })
+
     </script>
 </body>
 

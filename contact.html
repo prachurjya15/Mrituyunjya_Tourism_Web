@@ -340,9 +340,117 @@
         input:focus::placeholder{
        color:transparent;
   }
+  .m-ham{
+      display: none;
+  }
   textarea:focus::placeholder{
        color:transparent;
   }
+  @media only screen and (max-width: 1150px) {
+            .footer li {
+    list-style: none;
+    margin-right: 5vw;
+    flex-basis: 100%;
+    text-align: center;
+}
+.footer-copyright{
+    bottom:0;
+}
+.footer-copyright a {
+    color: #FD8F8F;
+    font-size: 15px;
+}
+#text-container {
+    flex-basis: 80%;
+    font-size: 19px;
+}
+#phto-container{
+    display: none;
+}
+button{
+    width: 70%;
+    /* flex-basis: 100%; */
+    font-size: 18px;
+    padding: 20px;
+    text-align: center;
+    height: auto;
+}
+.concept-child{
+    flex-basis: 70%;
+}
+.navbar1{
+    display: none;
+}
+.navbar2{
+    display: none;
+}
+.navbar-m{
+    display: flex;
+    height:20vh;
+    width: 100%;
+    background-color: #FFEFE2;
+    justify-content: center;
+    align-items: center;
+}
+.m-logo{
+    /* background-color: red; */
+    width:100%;
+    height: 80%;
+    background-image: url("images/Header.png");
+    background-size: cover;
+    background-position:center;
+    background-repeat: no-repeat;
+}
+.m-ham{
+display: block;
+position: fixed;
+    z-index: 200;
+    top: 44px;
+    left: 90%;
+    font-size: 30px;
+  color: #412236;
+    cursor: pointer;
+}
+.m-menu{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index:6000;
+    position: fixed;
+    top: 0;
+    background-color: #412236;
+    width: 100%;
+   right:100%;
+}
+.m-close{
+    color:white;
+    font-weight: bold;
+    font-size: 25px;
+    position: relative;
+    left:40%;
+    top:-30%;
+    cursor: pointer;
+}
+.m-menu-link>a{
+    font-size: 23px;
+    color:white;
+    font-weight: bold;
+    text-decoration: none;
+}
+         
+}
+.m-menu{
+    position:fixed;
+    right:-100%;
+}
+  
+@media only screen and (max-width: 780px) {
+    form{
+                justify-content: center;
+            }
+}
 
     </style>
 </head>
@@ -367,7 +475,21 @@
                         <li><a href="pilot.html">Pilot Programs</a></li>
                         <li><a href="contact.html">Contact Us</a></li>
                     </ul>
-        </nav> 
+        </nav>
+        <nav class="navbar-m">
+            <div class="m-logo"></div>
+            <div></div>
+        </nav>
+        <div class="m-ham"><i class="fa fa-bars"></i></div>
+        <div class="m-menu">
+            <div class="m-close">X</div>
+            <div class="m-menu-link"><a href="index.html">Home</a></div>
+            <div class="m-menu-link"><a href="about.html">About</a></div>
+            <div class="m-menu-link"><a href="pilot.html">Pilot Programs</a></div>
+            <div class="m-menu-link"><a href="ttd.html">Things To Do</a></div>
+            <div class="m-menu-link"><a href="whatism.html">What is Mrityunjya</a></div>
+            <div class="m-menu-link"><a href="contact.html">Contact Us</a></div>
+              </div> 
         <div id="concept-container">
                 <div class="section-heading" style="flex-basis:100%;text-align: center;">CONTACT US!</div><br><br>
                 <div class="concept-child">
@@ -441,6 +563,15 @@ logo.addEventListener("click",()=>{
                        nav2.classList.remove('onScroll');
                    }
                 });
+                let ham=document.querySelector(".m-ham");
+     let close=document.querySelector(".m-close")
+     let menu=document.querySelector(".m-menu");
+    ham.addEventListener("click",()=>{
+        menu.style.right=0;
+    })
+    close.addEventListener("click",()=>{
+        menu.style.right=100+"%";
+    })
                
                </script>
 </body>
