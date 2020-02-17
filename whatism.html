@@ -17,7 +17,7 @@
         * {
             margin: 0;
             font-family: 'Poppins', sans-serif;
-            font-size: 2.3vmin;
+            /* font-size: 2.3vmin; */
             letter-spacing: 2px;
         }
 
@@ -442,6 +442,10 @@ margin-top:0;
 
         }
         @media only screen and (max-width: 1150px) {
+            .excavate {
+    /* height: 140vh; */
+    height: auto;
+    margin-bottom: 50vh;}
     form{
                 justify-content: center;
                 flex-wrap: wrap;
@@ -769,8 +773,8 @@ position: fixed;
             happiness everyday!<br><br>
             <form method="POST" action='/send'>
                 <input name="name" placeholder="Name">
-                <input email="email" placeholder="E-Mail">
-                <input phno="phno" placeholder="Phone Number">
+                <input  name="email" placeholder="E-Mail">
+                <input name="phno" placeholder="Phone Number">
                 <div id="button-container"><button type="submit">Register Now</button></div>
 
             </form><br><br>

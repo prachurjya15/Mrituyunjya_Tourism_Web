@@ -16,8 +16,9 @@
     * {
         margin: 0;
         font-family: 'Poppins', sans-serif;
-        font-size: 2.3vmin;
+        /* font-size: 2.3vmin; */
         letter-spacing: 2px;
+        overflow-x: hidden;
     }
 
     nav li a {
@@ -439,6 +440,9 @@ position: fixed;
     font-weight: bold;
     text-decoration: none;
 }
+input{
+    flex-basis:80% ;
+}
          
 }
 .m-menu{
@@ -451,6 +455,15 @@ position: fixed;
                 justify-content: center;
             }
 }
+.welcome-text{
+            color:#fd8f8f;
+            font-family: 'Montserrat', sans-serif;
+            font-size:20px;
+            text-align: center;
+            letter-spacing: 3px;
+            font-weight: bold;
+
+        }
 
     </style>
 </head>
@@ -491,7 +504,8 @@ position: fixed;
             <div class="m-menu-link"><a href="contact.html">Contact Us</a></div>
               </div> 
         <div id="concept-container">
-                <div class="section-heading" style="flex-basis:100%;text-align: center;">CONTACT US!</div><br><br>
+            <div class="welcome-text" style="margin-top: 25px;">For Bookings..</div>
+                <div class="section-heading" style="flex-basis:100%;text-align: center;padding: 2px;">CONTACT US!</div><br><br>
                 <div class="concept-child">
                     
                     <div id="concept-logo-holder-1"></div>
@@ -522,10 +536,10 @@ position: fixed;
     <div class="contact-us">
         <div class="section-heading">Have a Question?<br>
                 Drop Us a Line!</div>
-<form>
-    <input type="text" placeholder="name*">
-    <input type="email" placeholder="email*">
-    <textarea rows="10" cols="80" placeholder="message*"></textarea>
+<form method="POST" action="/contact">
+    <input name="name" type="text" placeholder="name*">
+    <input name="email" type="email" placeholder="email*">
+    <textarea name="content" rows="10" cols="80" placeholder="message*"></textarea>
     <button type="submit">Register Now</button>
 </form>
 
